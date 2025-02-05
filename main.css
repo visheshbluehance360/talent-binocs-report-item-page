@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'montHeavy';
+  src: url('/fonts/mont-heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'neue-montreal-regular';
+  src: url('/fonts/neue-montreal-regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'Montserrat', 'neue-montreal-regular', serif;
+  font-optical-sizing: auto;
+  background-color: #f3f3f3;
+  margin: 1em;
+}
+
+.content-cards {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.2em;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+
+  padding: 1.2em;
+  border-radius: 10px;
+  gap: 14px;
+}
+
+.content-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.content-card-title {
+  font-family: 'montHeavy';
+  text-align: center;
+  font-size: large;
+}
+
+.candidate-name {
+  text-align: center;
+}
+
+.candidate-email {
+  text-align: center;
+  color: rgb(132, 131, 131);
+  font-size: small;
+}
+
+.content-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+.detail-title {
+  color: rgb(132, 131, 131);
+}
+
+.report-module-item {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+}
+
+.report-module-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+
+  padding: 1.2em;
+}
+
+.report-module-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.2em;
+}
+
+.text-content-title {
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .content-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .content-card:nth-child(3) {
+    grid-column: span 1;
+  }
+}
