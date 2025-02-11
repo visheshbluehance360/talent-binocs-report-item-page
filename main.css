@@ -10,17 +10,52 @@
   src: url('/fonts/neue-montreal-regular.otf') format('opentype');
 }
 
+:root {
+  --primary-color-blue: #105BBF;
+}
+
 body {
   font-family: 'Montserrat', 'neue-montreal-regular', serif;
   font-optical-sizing: auto;
   background-color: #f3f3f3;
-  margin: 1em;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+button.print {
+  border-radius: 5px;
+  transition: all 0.2s ease, visibility 0s;
+  border: 1px solid var(--primary-color-blue);
+  padding: 1em 2em;
+  font-size: 1em;
+  cursor: pointer;
+
+  background-color: var(--primary-color-blue);
+  color: #ffffff;
+}
+
+button.print:hover {
+  background-color: #ffffff;
+  color: var(--primary-color-blue);
+}
+
+.printable {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .content-cards {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1.2em;
+  padding: 1.2em;
 }
 
 .content-card {
@@ -57,7 +92,7 @@ body {
   font-size: small;
 }
 
-.content-card:nth-child(3) {
+.content-card.full-width {
   grid-column: span 2;
 }
 
@@ -65,12 +100,12 @@ body {
   color: rgb(132, 131, 131);
 }
 
-.report-module-item {
+.item {
   border: 1px solid rgb(219, 219, 219);
   border-radius: 5px;
 }
 
-.report-module-header {
+.header {
   display: flex;
   justify-content: space-between;
   background-color: #f7f7f7;
@@ -78,7 +113,7 @@ body {
   padding: 1.2em;
 }
 
-.report-module-body {
+.body {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -96,5 +131,23 @@ body {
 
   .content-card:nth-child(3) {
     grid-column: span 1;
+  }
+}
+
+@media print {
+  body {
+    margin: 10px 0;
+  }
+
+  header {
+    display: none;
+  }
+
+  .content-card {
+    page-break-inside: avoid;
+  }
+
+  ul,ol,li,p {
+    page-break-inside: avoid;
   }
 }
