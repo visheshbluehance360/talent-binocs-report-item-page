@@ -1,13 +1,22 @@
-addEventListener('load', () => {
-  const printButton = document.querySelector('button.print');
+addEventListener("load", () => {
+  const printButton = document.querySelector("button.print");
 
-  printButton.addEventListener('click', () => {
+  printButton.addEventListener("click", () => {
     window.print();
   });
 });
 
+function test() {
+  const reportModulesContentCardBody =
+    document.querySelector(".report-modules .content-card-body");
+
+  const reportModuleComponent = new ReportModuleComponent();
+
+  reportModulesContentCardBody.appendChild(reportModuleComponent.element);
+}
+
 class DetailItem {
-  constructor(title = '', body = '') {
+  constructor(title = "", body = "") {
     this.title = title;
     this.body = body;
   }

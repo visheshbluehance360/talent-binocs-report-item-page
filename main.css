@@ -15,6 +15,7 @@
 }
 
 body {
+  min-width: 300px;
   font-family: 'Montserrat', 'neue-montreal-regular', serif;
   font-optical-sizing: auto;
   background-color: #f3f3f3;
@@ -53,7 +54,7 @@ button.print:hover {
 
 .content-cards {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   gap: 1.2em;
   padding: 1.2em;
 }
@@ -76,6 +77,11 @@ button.print:hover {
   gap: 0.4em;
 }
 
+.report-modules .content-card-body,
+.how-to-content .content-card-body {
+  gap: 1.4em;
+}
+
 .content-card-title {
   font-family: 'montHeavy';
   text-align: center;
@@ -93,14 +99,14 @@ button.print:hover {
 }
 
 .content-card.full-width {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .detail-title {
   color: rgb(132, 131, 131);
 }
 
-.item {
+.header-body-item-card {
   border: 1px solid rgb(219, 219, 219);
   border-radius: 5px;
 }
@@ -120,17 +126,21 @@ button.print:hover {
   padding: 1.2em;
 }
 
-.text-content-title {
+.text-content .title {
   font-weight: 600;
 }
 
-@media (max-width: 600px) {
+.text-content .body {
+  padding: 1em;
+}
+
+@media (min-width: 590px) {
   .content-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
-  .content-card:nth-child(3) {
-    grid-column: span 1;
+  .content-card.full-width {
+    grid-column: span 2;
   }
 }
 
@@ -147,7 +157,10 @@ button.print:hover {
     page-break-inside: avoid;
   }
 
-  ul,ol,li,p {
+  ul,
+  ol,
+  li,
+  p {
     page-break-inside: avoid;
   }
 }
