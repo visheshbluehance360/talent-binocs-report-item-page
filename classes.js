@@ -1,11 +1,17 @@
 class ReportModuleComponent {
-  constructor() {
+  constructor(
+    titleText = "",
+    scoreText = "",
+    summaryText = "",
+    graphicUrl = "",
+    comprehensiveReportText = ""
+  ) {
     this.type = "ReportModuleComponent";
-    this.titleText = "";
-    this.scoreText = "";
-    this.summaryText = "";
-    this.graphicUrl = "";
-    this.comprehensiveReportText = "";
+    this.titleText = titleText;
+    this.scoreText = scoreText;
+    this.summaryText = summaryText;
+    this.graphicUrl = graphicUrl;
+    this.comprehensiveReportText = comprehensiveReportText;
   }
 
   get element() {
@@ -15,33 +21,46 @@ class ReportModuleComponent {
     const header = document.createElement("div");
     header.classList.add("header");
 
-    const title = document.createElement("div");
-    title.classList.add("title");
-    title.innerText = this.titleText;
+    if (this.titleText) {
+      const title = document.createElement("div");
+      title.classList.add("title");
+      title.innerText = this.titleText;
+      header.appendChild(title);
+    }
 
-    const headerRightText = document.createElement("div");
-    headerRightText.classList.add("header-right-text");
-    headerRightText.innerText = this.scoreText;
+    if (this.scoreText) {
+      const headerRightText = document.createElement("div");
+      headerRightText.classList.add("header-right-text");
+      headerRightText.innerText = this.scoreText;
+      header.appendChild(headerRightText);
+    }
 
-    header.appendChild(title);
-    header.appendChild(headerRightText);
+    element.appendChild(header);
 
     const body = document.createElement("div");
     body.classList.add("body");
 
-    const textContent_Summary = new TextContentComponent(
-      "Summary",
-      this.summaryText
-    );
-    const textContent_ComprehensiveReport = new TextContentComponent(
-      "Comprehensive Report",
-      this.comprehensiveReportText
-    );
+    if (this.summaryText) {
+      const textContent_Summary = new TextContentComponent(
+        "Summary",
+        this.summaryText
+      );
+      body.appendChild(textContent_Summary.element);
+    }
 
-    body.appendChild(textContent_Summary.element);
-    body.appendChild(textContent_ComprehensiveReport.element);
+    if (this.graphicUrl) {
+      const scoreGraphic = document.createElement("img");
+      body.appendChild(scoreGraphic);
+    }
 
-    element.appendChild(header);
+    if (this.comprehensiveReportText) {
+      const textContent_ComprehensiveReport = new TextContentComponent(
+        "Comprehensive Report",
+        this.comprehensiveReportText
+      );
+      body.appendChild(textContent_ComprehensiveReport.element);
+    }
+
     element.appendChild(body);
 
     return element;
