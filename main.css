@@ -16,10 +16,14 @@
 
 body {
   min-width: 300px;
-  font-family: 'Montserrat', 'neue-montreal-regular', serif;
+  font-family: 'Montserrat', 'neue-montreal-regular', system-ui, serif;
   font-optical-sizing: auto;
   background-color: #f3f3f3;
   margin: 0;
+}
+
+img {
+  object-fit: contain;
 }
 
 header {
@@ -77,8 +81,7 @@ button.print:hover {
   gap: 0.4em;
 }
 
-.report-modules .content-card-body,
-.how-to-content .content-card-body {
+.report-modules.how-to-content .content-card-body {
   gap: 1.4em;
 }
 
@@ -132,6 +135,10 @@ button.print:hover {
 
 .text-content .body {
   padding: 1em;
+}
+
+.score-gauge {
+  max-height: 200px;
 }
 
 @media (min-width: 590px) {

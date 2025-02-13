@@ -50,6 +50,10 @@ class ReportModuleComponent {
 
     if (this.graphicUrl) {
       const scoreGraphic = document.createElement("img");
+      scoreGraphic.classList.add("score-gauge");
+      scoreGraphic.alt = "score gauge graphic";
+      scoreGraphic.src = this.graphicUrl;
+      scoreGraphic.loading = "lazy";
       body.appendChild(scoreGraphic);
     }
 

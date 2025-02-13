@@ -17,7 +17,7 @@ function test() {
     "Personality",
     "60-80%",
     "Candidate scored 40-59% in personality, showing a mix of expressive and reserved communication with a balanced outlook.",
-    "",
+    "sampleImages/scoreGauge.png",
     "The candidate demonstrates a moderate level of friendliness and engagement, reflected in their score of 40-59%. Their communication style is a mix of expressive and reserved, which sometimes limits their ability to fully connect with customers. They maintain a balanced outlook, neither overly optimistic nor pessimistic, which can contribute to steady, if not highly engaging, customer interactions. To further enhance their friendly personality, the candidate should focus on developing a more consistently expressive communication style and fostering a more optimistic approach. Engaging in activities that boost social confidence and positivity can help them become more approachable and engaging. This improvement will enhance their effectiveness in impact roles, ensuring they create more positive and memorable customer experiences."
   );
 
