@@ -1,3 +1,61 @@
+class DetailItemComponent {
+  _title = "";
+  _body = "";
+
+  constructor(title = "", body = "") {
+    this._title = title;
+    this._body = body;
+
+    this.titleElement = this.createTitleElement();
+    this.bodyElement = this.createBodyElement();
+    this.element = this.createElement();
+  }
+
+  createTitleElement() {
+    const element = document.createElement("div");
+    element.classList.add("title");
+    element.textContent = this._title;
+    return element;
+  }
+
+  createBodyElement() {
+    const element = document.createElement("div");
+    element.classList.add("body");
+    element.textContent = this._body;
+    return element;
+  }
+
+  createElement() {
+    const element = document.createElement("div");
+    element.classList.add("detail-item");
+
+    element.appendChild(this.titleElement);
+    element.appendChild(this.bodyElement);
+
+    return element;
+  }
+
+  set title(value) {
+    this._title = value;
+
+    this.titleElement.textContent = value;
+  }
+
+  get title() {
+    return this._title;
+  }
+
+  set body(value) {
+    this._body = value;
+
+    this.bodyElement.textContent = value;
+  }
+
+  get body() {
+    return this._body;
+  }
+}
+
 class ReportModuleComponent {
   constructor(
     titleText = "",

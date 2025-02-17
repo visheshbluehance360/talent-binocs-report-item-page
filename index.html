@@ -6,7 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TB - Report</title>
 
-  <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/mediaQuery.css">
+  <link rel="stylesheet" href="css/print.css">
 </head>
 
 <body>
@@ -16,7 +24,17 @@
 
   <div class="printable content-cards">
 
-    <div class="candidate-details content-card">
+    <div class="recruiter content-card">
+
+      <div class="content-card-title">Conducted by</div>
+      <div class="content-card-body">
+        <div class="candidate-name">Vishesh V</div>
+        <div class="candidate-email">vishesh.bluehance360@gmail.com</div>
+      </div>
+
+    </div>
+
+    <div class="candidate content-card">
       <div class="content-card-title">Attempted by</div>
       <div class="content-card-body">
         <div class="candidate-name">Vishesh</div>
@@ -24,14 +42,9 @@
       </div>
     </div>
 
-    <div class="questionnaire-details content-card">
+    <div class="questionnaire-details content-card full-width">
       <div class="content-card-title">Questionnaire Details</div>
-      <div class="content-card-body">
-        <div class="detail-item">
-          <div class="detail-title">Name</div>
-          <div class="detail-body">Questionnaire Name</div>
-        </div>
-      </div>
+      <div class="content-card-body"></div>
     </div>
 
     <div class="report-modules how-to-content content-card full-width list">
@@ -102,9 +115,9 @@
 
   </div>
 
-  <script src="config.js"></script>
-  <script src="classes.js"></script>
-  <script src="main.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

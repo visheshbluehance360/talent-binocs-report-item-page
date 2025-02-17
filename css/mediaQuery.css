@@ -1,0 +1,9 @@
+@media (min-width: 590px) {
+    .content-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-card.full-width {
+        grid-column: span 2;
+    }
+}

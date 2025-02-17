@@ -1,0 +1,26 @@
+@media print {
+    body {
+      margin: 10px 0;
+    }
+  
+    header {
+      display: none;
+    }
+  
+    .content-card,
+    .report-module-item .text-content {
+      page-break-inside: avoid;
+    }
+  
+    ul,
+    ol,
+    li,
+    p {
+      page-break-inside: avoid;
+    }
+  }
+  
+  @page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+  }

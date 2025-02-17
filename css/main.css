@@ -16,7 +16,8 @@
 
 body {
   min-width: 300px;
-  font-family: 'Montserrat', 'neue-montreal-regular', system-ui, serif;
+  /* font-family: 'Montserrat', 'neue-montreal-regular', system-ui, serif; */
+  font-family: "Inter";
   font-optical-sizing: auto;
   background-color: #f3f3f3;
   margin: 0;
@@ -72,21 +73,44 @@ button.print:hover {
 
   padding: 1.2em;
   border-radius: 10px;
+  gap: 1em;
+}
+
+.candidate-recruiter {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.candidate-recruiter>div {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
 .content-card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.4em;
+  gap: 0.2em;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.questionnaire-details .content-card-body {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1em 2em;
 }
 
 .full-width.list .content-card-body {
+  font-weight: 300;
   gap: 1.4em;
 }
 
 .content-card-title {
-  font-family: 'montHeavy';
   text-align: center;
   font-size: large;
 }
@@ -105,7 +129,7 @@ button.print:hover {
   grid-column: span 1;
 }
 
-.detail-title {
+.detail-item .title {
   color: rgb(132, 131, 131);
 }
 
@@ -122,7 +146,7 @@ button.print:hover {
   padding: 1.2em;
 }
 
-.body {
+.header-body-item-card .body {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -139,35 +163,4 @@ button.print:hover {
 
 .score-gauge {
   max-height: 200px;
-}
-
-@media (min-width: 590px) {
-  .content-cards {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .content-card.full-width {
-    grid-column: span 2;
-  }
-}
-
-@media print {
-  body {
-    margin: 10px 0;
-  }
-
-  header {
-    display: none;
-  }
-
-  .content-card {
-    page-break-inside: avoid;
-  }
-
-  ul,
-  ol,
-  li,
-  p {
-    page-break-inside: avoid;
-  }
 }

@@ -9,6 +9,20 @@ addEventListener("load", () => {
 });
 
 function test() {
+  const questionnaireDetailsBody = document.querySelector(
+    ".questionnaire-details .content-card-body"
+  );
+
+  const detailItem1 = new DetailItemComponent(
+    "Name", "Questionnaire Name"
+  );
+  questionnaireDetailsBody.appendChild(detailItem1.element);
+
+  const detailItem3 = new DetailItemComponent(
+    "Date:", "Date of Report"
+  );
+  questionnaireDetailsBody.appendChild(detailItem3.element);
+
   const reportModulesContentCardBody = document.querySelector(
     ".report-modules .content-card-body"
   );
@@ -22,13 +36,6 @@ function test() {
   );
 
   reportModulesContentCardBody.appendChild(reportModuleComponent.element);
-}
-
-class DetailItem {
-  constructor(title = "", body = "") {
-    this.title = title;
-    this.body = body;
-  }
 }
 
 async function getWixAccessToken() {
