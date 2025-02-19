@@ -23,6 +23,10 @@ body {
   margin: 0;
 }
 
+.print-header {
+  display: none;
+}
+
 img {
   object-fit: contain;
 }

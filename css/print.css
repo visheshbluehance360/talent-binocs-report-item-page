@@ -1,26 +1,39 @@
 @media print {
-    body {
-      margin: 10px 0;
-    }
-  
-    header {
-      display: none;
-    }
-  
-    .content-card,
-    .report-module-item .text-content {
-      page-break-inside: avoid;
-    }
-  
-    ul,
-    ol,
-    li,
-    p {
-      page-break-inside: avoid;
-    }
+  body {
+    margin: 10px 0;
   }
-  
-  @page {
-    margin-top: 2cm;
-    margin-bottom: 2cm;
+
+  .print-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
+
+  .print-header img {
+    width: 100px;
+  }
+
+  header {
+    display: none;
+  }
+
+  .content-card,
+  .report-module-item .text-content {
+    page-break-inside: avoid;
+  }
+
+  ul,
+  ol,
+  li,
+  p {
+    page-break-inside: avoid;
+  }
+}
+
+@page {
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}

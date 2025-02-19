@@ -9,7 +9,7 @@ addEventListener("load", () => {
 });
 
 function getPageData() {
-  const url = "https://rprochow.wixsite.com/themindsetiq/_functions/reportpagecontent/b85d9e20-b127-42cb-afff-1206bcacec64";
+  const url = "https://rprochow.wixsite.com/themindsetiq/_functions/reportpagecontent/24ba886a-c45c-4228-9ad4-ee9606ebaa0f";
 
   fetch(url)
     .then(res => {

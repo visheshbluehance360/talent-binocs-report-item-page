@@ -64,8 +64,6 @@ function populateList(listData) {
     listData.forEach((listItemData) => {
         if (listItemData.howToContents?.length) {
             listItemData.howToContents.forEach((howToContentData) => {
-                console.log("howToContentData", howToContentData);
-
                 const howToContentComponent = new HowToContentComponent(
                     howToContentData.assignTo?.label,
                     howToContentData.content

@@ -185,11 +185,11 @@ class HowToContentComponent {
     const body = document.createElement("div");
     body.classList.add("body");
 
-    const textContent_content = new TextContentComponent(
-      "",
-      this._body
-    );
-    body.appendChild(textContent_content.element);
+    const textContentBody = document.createElement("div");
+    textContentBody.classList.add("text-content-body");
+    textContentBody.innerHTML = this._body;
+    
+    body.appendChild(textContentBody);
 
     return body;
   }
