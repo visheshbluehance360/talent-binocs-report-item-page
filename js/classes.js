@@ -146,11 +146,81 @@ class TextContentComponent {
 
     const body = document.createElement("div");
     body.classList.add("body");
-    body.innerText = this.bodyText;
+    body.innerHTML = this.bodyText;
 
     element.appendChild(title);
     element.appendChild(body);
 
     return element;
+  }
+}
+
+class HowToContentComponent {
+  _title = '';
+  _body = '';
+
+  constructor(title = "", body = "") {
+    this.type = "HowToContentComponent";
+    this._title = title;
+    this._body = body;
+
+    this.titleElement = this.createTitleElement();
+    this.bodyElement = this.createBodyElement();
+    this.element = this.createElement();
+  }
+
+  createTitleElement() {
+    const header = document.createElement("div");
+    header.classList.add("header");
+
+    const title = document.createElement("div");
+    title.classList.add("title");
+    title.innerText = this._title;
+    header.appendChild(title);
+
+    return header;
+  }
+
+  createBodyElement() {
+    const body = document.createElement("div");
+    body.classList.add("body");
+
+    const textContent_content = new TextContentComponent(
+      "",
+      this._body
+    );
+    body.appendChild(textContent_content.element);
+
+    return body;
+  }
+
+  createElement() {
+    const element = document.createElement("div");
+    element.classList.add("how-to-content-item", "header-body-item-card");
+
+    element.appendChild(this.titleElement);
+    element.appendChild(this.bodyElement);
+
+    return element;
+  }
+
+  set title(value) {
+    this._title = value;
+
+    this.titleElement.textContent = value;
+  }
+
+  get title() {
+    return this._title;
+  }
+
+  set body(value) {
+    this._body = value;
+
+    this.bodyElement.textContent = value;
+  }
+
+  get body() {
+    return this._body;
   }
 }

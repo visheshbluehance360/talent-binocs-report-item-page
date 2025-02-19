@@ -41,20 +41,18 @@ function populateQuestionnaireData(questionnaireData) {
 
 //
 const a = {
-    "scoreMin": 80,
-    "_id": "38a4fcea-6194-4834-a299-6471215d38c2",
-    "mindset": {
-        "number": 12,
-        "_id": "32759e71-3e68-480b-8e6c-f1b4b0965b65",
-        "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
-        "_createdDate": "2024-09-18T13:22:09.291Z",
-        "_updatedDate": "2024-09-18T13:25:00.035Z",
-        "title": "Grateful Mindset vs. Entitled Mindset "
+    "_publishDate": "2025-02-18T07:21:11.041Z",
+    "assignTo": {
+        "label": "General Introduction to the Report",
+        "value": "all-1"
     },
-    "reportText": "The c",
-    "scoreMax": 100,
-    "assignedTo": "mindset",
-    "summary": "This candidate demonstrates an 80-100% alignment with the Grateful Mindset attribute."
+    "_id": "096f78e5-ffca-488b-ab7d-e65a24bfdc8f",
+    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+    "_createdDate": "2025-02-18T07:21:11.041Z",
+    "_updatedDate": "2025-02-18T07:21:11.041Z",
+    "_publishStatus": "PUBLISHED",
+    "content": "<p>",
+    "title": "General Introduction to the Report"
 }
 //
 
@@ -63,7 +61,20 @@ function populateList(listData) {
         ".report-modules .content-card-body"
     );
 
-    listData.map((listItemData) => {
+    listData.forEach((listItemData) => {
+        if (listItemData.howToContents?.length) {
+            listItemData.howToContents.forEach((howToContentData) => {
+                console.log("howToContentData", howToContentData);
+
+                const howToContentComponent = new HowToContentComponent(
+                    howToContentData.assignTo?.label,
+                    howToContentData.content
+                );
+
+                reportModulesContentCardBody.appendChild(howToContentComponent.element);
+            });
+        }
+
         if (listItemData.reportModule) {
             const title = listItemData.reportModule[listItemData.reportModule.assignedTo].title;
             const scoreText = [listItemData.reportModule.scoreMin, listItemData.reportModule.scoreMax].join("-");
