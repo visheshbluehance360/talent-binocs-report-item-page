@@ -81,7 +81,7 @@ function populateList(listData) {
                 title,
                 scoreText ? `${scoreText}%` : "",
                 listItemData.reportModule.summary,
-                "sampleImages/scoreGauge.png",
+                "../sampleImages/scoreGauge.png",
                 listItemData.reportModule.reportText
             );
 
