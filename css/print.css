@@ -1,19 +1,6 @@
 @media print {
-  body {
-    margin: 10px 0;
-  }
-
-  .print-header {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .print-header img {
-    width: 300px;
+  .score-gauge {
+    height: 200px;
   }
 
   header {
@@ -21,15 +8,42 @@
   }
 
   .content-card,
-  .report-module-item .text-content {
+  .report-module-item .text-content,
+  li, p {
     page-break-inside: avoid;
   }
+}
 
-  ul,
-  ol,
-  li,
-  p {
-    page-break-inside: avoid;
+@media print {
+  .printHeader,
+  .header-space {
+    height: 100px;
+  }
+
+  .printHeader {
+    display: flex;
+  }
+
+  .printHeader .printFooter {
+    width: 100%;
+  }
+
+  .printHeader {
+    position: fixed;
+    top: 0;
+  }
+
+  .printHeader img {
+    height: 100%;
+  }
+
+  .printFooter {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .printFooter, .footer-space {
+    height: 10px;
   }
 }
 

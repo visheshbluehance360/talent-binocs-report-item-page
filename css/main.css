@@ -14,17 +14,22 @@
   --primary-color-blue: #105BBF;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 300px;
-  /* font-family: 'Montserrat', 'neue-montreal-regular', system-ui, serif; */
   font-family: "Inter";
   font-optical-sizing: auto;
   background-color: #f3f3f3;
   margin: 0;
+  color: #232323;
 }
 
-.print-header {
-  display: none;
+table {
+  margin: auto;
+  width: 100%;
 }
 
 img {
@@ -73,11 +78,18 @@ button.print:hover {
   flex-direction: column;
 
   background-color: white;
-  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1); */
+  
+  border: 1px solid #acacac;
 
-  padding: 1.2em;
+  padding: 1.4em;
   border-radius: 10px;
   gap: 1em;
+}
+
+.recruiter.content-card, .candidate.content-card {
+  flex-direction: row;
+  gap: 0.6em;
 }
 
 .candidate-recruiter {
@@ -114,40 +126,56 @@ button.print:hover {
   gap: 1.4em;
 }
 
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
 .content-card-title {
-  text-align: center;
+  text-align: left;
   font-size: large;
+  font-weight: 600;
 }
 
 .name {
-  text-align: center;
+  text-align: left;
 }
 
 .email {
-  text-align: center;
-  color: rgb(132, 131, 131);
-  font-size: small;
+  text-align: left;
 }
 
 .content-card.full-width {
   grid-column: span 1;
 }
 
+.content-card.list {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 .detail-item .title {
-  color: rgb(132, 131, 131);
+  font-weight: 500;
 }
 
 .header-body-item-card {
-  border: 1px solid rgb(219, 219, 219);
-  border-radius: 5px;
+  border: 1px solid #acacac;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
-.header {
+.list .header {
   display: flex;
   justify-content: space-between;
-  background-color: #f7f7f7;
+  background-color: #024bdc1a;
+  color: #024bdc;
+  font-weight: 500;
 
   padding: 1.2em;
+  text-transform: uppercase;
 }
 
 .header-body-item-card .body {
@@ -155,6 +183,7 @@ button.print:hover {
   flex-direction: column;
   gap: 20px;
   padding: 1.2em;
+  color: #232323;
 }
 
 .text-content .title {
@@ -167,4 +196,22 @@ button.print:hover {
 
 .score-gauge {
   max-height: 200px;
+}
+
+.printHeader {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.printHeader {
+  display: none;
+}
+
+.printHeader hr {
+  flex: 1;
+  height: 1;
+  border: 1px solid #d0d0d0;
 }
