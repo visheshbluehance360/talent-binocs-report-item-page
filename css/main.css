@@ -17,6 +17,7 @@
 
 * {
   box-sizing: border-box;
+  overflow-wrap: anywhere;
 
   /* -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
@@ -75,7 +76,7 @@ button.print:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.2em;
-  padding: 2em 2em 4em;
+  padding: 0.5em 1em 2em;
 }
 
 .content-card {
@@ -83,7 +84,6 @@ button.print:hover {
   flex-direction: column;
 
   background-color: white;
-  /* box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1); */
 
   border: 1px solid var(--color-border);
 
