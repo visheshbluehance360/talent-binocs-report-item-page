@@ -38,16 +38,17 @@
   }
 
   .printFooter {
+    display: flex;
+
     position: fixed;
     bottom: 0;
   }
 
-  .printFooter, .footer-space {
-    height: 10px;
+  .footer-space {
+    height: 40px;
   }
 }
 
 @page {
   margin-top: 2cm;
-  margin-bottom: 2cm;
 }

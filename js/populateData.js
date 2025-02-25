@@ -4,7 +4,7 @@ function populateData(data) {
     populateRecruiterData(data.recruiter);
     populateCandidateData(data.candidate);
     populateQuestionnaireData(data.questionnaire);
-    populateList(data.list);
+    populateList(data);
 }
 
 function populateRecruiterData(recruiterData) {
@@ -34,9 +34,14 @@ function populateQuestionnaireData(questionnaireData) {
     questionnaireDetailsBody.appendChild(detailItem_questionnaireName.element);
 
     const detailItem_questionnaireDate = new DetailItemComponent(
-        "Date:", questionnaireData.date
+        "Date of Report:", formatDate(questionnaireData.date)
     );
     questionnaireDetailsBody.appendChild(detailItem_questionnaireDate.element);
+
+    const detailItem_questionnaireTime = new DetailItemComponent(
+        "Time of Report:", formatTime(questionnaireData.date)
+    );
+    questionnaireDetailsBody.appendChild(detailItem_questionnaireTime.element);
 }
 
 //
@@ -56,7 +61,9 @@ const a = {
 }
 //
 
-function populateList(listData) {
+function populateList(data) {
+    const listData = data.list;
+
     const reportModulesContentCardBody = document.querySelector(
         ".report-modules .content-card-body"
     );
@@ -76,12 +83,18 @@ function populateList(listData) {
         if (listItemData.reportModule) {
             const title = listItemData.reportModule[listItemData.reportModule.assignedTo].title;
             const scoreText = [listItemData.reportModule.scoreMin, listItemData.reportModule.scoreMax].join("-");
+            const scoreGraphicItem = data.scoreGraphics.find(scoreGraphic =>
+                scoreGraphic.score >= listItemData.reportModule.scoreMin &&
+                scoreGraphic.score <= listItemData.reportModule.scoreMax
+            );
+
+            const scoreGraphicUrl = scoreGraphicItem?.image;
 
             const reportModuleComponent = new ReportModuleComponent(
                 title,
                 scoreText ? `${scoreText}%` : "",
                 listItemData.reportModule.summary,
-                "../sampleImages/scoreGauge.png",
+                scoreGraphicUrl,
                 listItemData.reportModule.reportText
             );
 

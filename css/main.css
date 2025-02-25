@@ -12,10 +12,15 @@
 
 :root {
   --primary-color-blue: #105BBF;
+  --color-border: #acacac;
 }
 
 * {
   box-sizing: border-box;
+
+  /* -webkit-print-color-adjust: exact !important;
+  color-adjust: exact !important;
+  print-color-adjust: exact !important; */
 }
 
 body {
@@ -79,15 +84,16 @@ button.print:hover {
 
   background-color: white;
   /* box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1); */
-  
-  border: 1px solid #acacac;
+
+  border: 1px solid var(--color-border);
 
   padding: 1.4em;
   border-radius: 10px;
   gap: 1em;
 }
 
-.recruiter.content-card, .candidate.content-card {
+.recruiter.content-card,
+.candidate.content-card {
   flex-direction: row;
   gap: 0.6em;
 }
@@ -118,7 +124,7 @@ button.print:hover {
 .questionnaire-details .content-card-body {
   flex-direction: row;
   justify-content: flex-start;
-  gap: 1em 2em;
+  gap: 1em 3em;
 }
 
 .full-width.list .content-card-body {
@@ -161,7 +167,7 @@ button.print:hover {
 }
 
 .header-body-item-card {
-  border: 1px solid #acacac;
+  border: 1px solid var(--color-border);
   border-radius: 10px;
   overflow: hidden;
   background-color: #ffffff;
@@ -170,9 +176,9 @@ button.print:hover {
 .list .header {
   display: flex;
   justify-content: space-between;
-  background-color: #024bdc1a;
   color: #024bdc;
   font-weight: 500;
+  border-bottom: 1px solid var(--color-border);
 
   padding: 1.2em;
   text-transform: uppercase;
@@ -214,4 +220,22 @@ button.print:hover {
   flex: 1;
   height: 1;
   border: 1px solid #d0d0d0;
+}
+
+.printFooter {
+  width: 100%;
+  height: 30px;
+  display: none;
+}
+
+.printFooter div {
+  flex: 1;
+}
+
+.printFooter div:nth-of-type(1) {
+  border-top: 20px solid #ffa559;
+}
+
+.printFooter div:nth-of-type(2) {
+  border-top: 20px solid #fe7622;
 }
