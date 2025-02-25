@@ -1,15 +1,17 @@
 @media print {
-  .score-gauge {
-    height: 200px;
-  }
-
   header {
     display: none;
   }
 
-  .content-card,
-  .report-module-item .text-content,
-  li, p {
+  .list.content-card {
+    page-break-before: always;
+  }
+
+  .header-body-item-card {
+    page-break-before: always;
+  }
+
+  .header-body-item-card .text-content {
     page-break-inside: avoid;
   }
 }
