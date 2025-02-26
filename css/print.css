@@ -1,4 +1,8 @@
 @media print {
+  body {
+    background-color: unset;
+  }
+
   header {
     display: none;
   }
