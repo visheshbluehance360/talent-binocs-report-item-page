@@ -44,7 +44,7 @@
   }
 
   .printFooter {
-    display: flex;
+    /* display: flex; */
 
     position: fixed;
     bottom: 0;
