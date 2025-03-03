@@ -4,6 +4,9 @@ function populateData(data) {
     populateRecruiterData(data.recruiter);
     populateCandidateData(data.candidate);
     populateQuestionnaireData(data.questionnaire);
+
+    populate_index(data);
+
     populateList(data);
 }
 
@@ -44,22 +47,38 @@ function populateQuestionnaireData(questionnaireData) {
     questionnaireDetailsBody.appendChild(detailItem_questionnaireTime.element);
 }
 
-//
-const a = {
-    "_publishDate": "2025-02-18T07:21:11.041Z",
-    "assignTo": {
-        "label": "General Introduction to the Report",
-        "value": "all-1"
-    },
-    "_id": "096f78e5-ffca-488b-ab7d-e65a24bfdc8f",
-    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
-    "_createdDate": "2025-02-18T07:21:11.041Z",
-    "_updatedDate": "2025-02-18T07:21:11.041Z",
-    "_publishStatus": "PUBLISHED",
-    "content": "<p>",
-    "title": "General Introduction to the Report"
+function populate_index(data) {
+    const compartmentIds = [
+        "a96c31af-f893-4401-bed9-98c8d1cf585b",
+        "efd7b5cc-d4ee-4db9-a8b7-56a34bed82cb",
+        "ac23cba7-fd16-468c-b5ed-6c0bc8b3c70c",
+        "abb21ee5-90d0-415f-b621-a11639392613",
+        "76bcceec-14ad-4faf-b3c9-749da61ba5b8"
+    ];
+
+    const indexElement = document.querySelector(".index .content-card-body ol");
+
+    const indexItems = [];
+
+    data.list.forEach((listItemData) => {
+        listItemData?.howToContents?.forEach((howToContentData) => {
+            if (howToContentData?.assignTo?.collectionName == "Compartments") {
+                indexItems.push(howToContentData.assignTo);
+            }
+        });
+    });
+
+    indexItems.sort((a, b) => {
+        aIndex = compartmentIds.indexOf(a.value);
+        bIndex = compartmentIds.indexOf(b.value);
+
+        return aIndex - bIndex;
+    }).forEach((indexItem) => {
+        const indexItemElement = document.createElement("li");
+        indexItemElement.innerText = indexItem.label;
+        indexElement.appendChild(indexItemElement);
+    });
 }
-//
 
 function populateList(data) {
     const listData = data.list;

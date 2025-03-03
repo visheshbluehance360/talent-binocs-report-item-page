@@ -5,6 +5,9 @@ addEventListener("load", () => {
     window.print();
   });
 
+  const body = document.querySelector("body");
+  body.classList.add("loadingData");
+
   getPageData();
 });
 
@@ -19,5 +22,9 @@ function getPageData() {
       return res.text().then(text => { throw new Error(text); });
     })
     .then(populateData)
-    .catch(console.error);
+    .catch(console.error)
+    .finally(() => {
+      const body = document.querySelector("body");
+      body.classList.remove("loadingData");
+    });
 }
