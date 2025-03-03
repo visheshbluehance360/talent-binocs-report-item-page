@@ -42,6 +42,11 @@ img {
   object-fit: contain;
 }
 
+ol {
+  margin: 0;
+  padding-inline-start: 30px;
+}
+
 header {
   display: flex;
   justify-content: right;
@@ -92,6 +97,13 @@ button.print:hover {
   gap: 1em;
 }
 
+.content-card.index {
+  grid-column: span 2;
+  background: none;
+  border: none;
+  padding: 1em;
+}
+
 .recruiter.content-card,
 .candidate.content-card {
   flex-direction: row;
@@ -140,7 +152,7 @@ button.print:hover {
 
 .content-card-title {
   text-align: left;
-  font-size: large;
+  font-size: 1em;
   font-weight: 600;
 }
 
