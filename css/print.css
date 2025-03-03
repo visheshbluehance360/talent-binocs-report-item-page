@@ -18,6 +18,10 @@
   .header-body-item-card .text-content {
     page-break-inside: avoid;
   }
+
+  .questionnaire-details .content-card-body {
+    column-gap: 3em;
+  }
 }
 
 @media print {
