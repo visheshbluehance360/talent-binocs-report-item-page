@@ -48,32 +48,19 @@ function populateQuestionnaireData(questionnaireData) {
 }
 
 function populate_index(data) {
-    const compartmentIds = [
-        "a96c31af-f893-4401-bed9-98c8d1cf585b",
-        "efd7b5cc-d4ee-4db9-a8b7-56a34bed82cb",
-        "ac23cba7-fd16-468c-b5ed-6c0bc8b3c70c",
-        "abb21ee5-90d0-415f-b621-a11639392613",
-        "76bcceec-14ad-4faf-b3c9-749da61ba5b8"
-    ];
-
-    const indexElement = document.querySelector(".index .content-card-body ol");
-
-    const indexItems = [];
-
-    data.list.forEach((listItemData) => {
-        listItemData?.howToContents?.forEach((howToContentData) => {
-            if (howToContentData?.assignTo?.collectionName == "Compartments") {
-                indexItems.push(howToContentData.assignTo);
-            }
+    const howToContentCategories_filtered = data?.howToContentCategories?.filter(howToContentCategory => {
+        return data?.list.find(listItem => {
+            return listItem.howToContents?.find(howToContent => {
+                return howToContent.assignTo?.value == howToContentCategory?.value;
+            });
         });
     });
 
-    indexItems.sort((a, b) => {
-        aIndex = compartmentIds.indexOf(a.value);
-        bIndex = compartmentIds.indexOf(b.value);
+    console.log("howToContentCategories_filtered", howToContentCategories_filtered);
 
-        return aIndex - bIndex;
-    }).forEach((indexItem) => {
+    const indexElement = document.querySelector(".index .content-card-body ol");
+
+    howToContentCategories_filtered.forEach((indexItem) => {
         const indexItemElement = document.createElement("li");
         indexItemElement.innerText = indexItem.label;
         indexElement.appendChild(indexItemElement);

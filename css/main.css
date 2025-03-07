@@ -24,6 +24,26 @@
   print-color-adjust: exact !important; */
 }
 
+.loading-data {
+  color: transparent;
+}
+
+.loading-data .content-card {
+  border: none;
+  
+  animation: 1s infinite alternate skeleton;
+}
+
+@keyframes skeleton {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
 body {
   min-width: 300px;
   font-family: "Inter";
