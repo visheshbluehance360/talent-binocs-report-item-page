@@ -4,6 +4,9 @@ function populateData(data) {
     populateRecruiterData(data.recruiter);
     populateCandidateData(data.candidate);
     populateQuestionnaireData(data.questionnaire);
+
+    populate_index(data);
+
     populateList(data);
 }
 
@@ -44,22 +47,25 @@ function populateQuestionnaireData(questionnaireData) {
     questionnaireDetailsBody.appendChild(detailItem_questionnaireTime.element);
 }
 
-//
-const a = {
-    "_publishDate": "2025-02-18T07:21:11.041Z",
-    "assignTo": {
-        "label": "General Introduction to the Report",
-        "value": "all-1"
-    },
-    "_id": "096f78e5-ffca-488b-ab7d-e65a24bfdc8f",
-    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
-    "_createdDate": "2025-02-18T07:21:11.041Z",
-    "_updatedDate": "2025-02-18T07:21:11.041Z",
-    "_publishStatus": "PUBLISHED",
-    "content": "<p>",
-    "title": "General Introduction to the Report"
+function populate_index(data) {
+    const howToContentCategories_filtered = data?.howToContentCategories?.filter(howToContentCategory => {
+        return data?.list.find(listItem => {
+            return listItem.howToContents?.find(howToContent => {
+                return howToContent.assignTo?.value == howToContentCategory?.value;
+            });
+        });
+    });
+
+    console.log("howToContentCategories_filtered", howToContentCategories_filtered);
+
+    const indexElement = document.querySelector(".index .content-card-body ol");
+
+    howToContentCategories_filtered.forEach((indexItem) => {
+        const indexItemElement = document.createElement("li");
+        indexItemElement.innerText = indexItem.label;
+        indexElement.appendChild(indexItemElement);
+    });
 }
-//
 
 function populateList(data) {
     const listData = data.list;

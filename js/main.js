@@ -5,11 +5,16 @@ addEventListener("load", () => {
     window.print();
   });
 
+  const body = document.querySelector("body");
+  body.classList.add("loading-data");
+
   getPageData();
 });
 
 function getPageData() {
-  const url = "https://rprochow.wixsite.com/themindsetiq/_functions/reportpagecontent/24ba886a-c45c-4228-9ad4-ee9606ebaa0f";
+  const pageItemId = "d2422e94-a655-4637-9756-8959edf91119";
+
+  const url = `https://rprochow.wixsite.com/themindsetiq/_functions/reportpagecontent/${pageItemId}`;
 
   fetch(url)
     .then(res => {
@@ -19,5 +24,9 @@ function getPageData() {
       return res.text().then(text => { throw new Error(text); });
     })
     .then(populateData)
-    .catch(console.error);
+    .catch(console.error)
+    .finally(() => {
+      const body = document.querySelector("body");
+      body.classList.remove("loading-data");
+    });
 }

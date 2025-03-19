@@ -6,4 +6,15 @@
     .content-card.full-width {
         grid-column: span 2;
     }
+
+    .questionnaire-details .content-card-body {
+        column-gap: 6em;
+    }
+}
+
+@media (min-width: 900px) {
+    .recruiter.content-card,
+    .candidate.content-card {
+        grid-column: span 1;
+    }
 }

@@ -1,22 +1,29 @@
 @media print {
   body {
-    background-color: unset;
+    background-color: transparent !important;
+
+    height: auto;
   }
 
   header {
-    display: none;
+    display: none !important;
   }
 
-  .list.content-card {
-    page-break-before: always;
-  }
-
+  .list.content-card,
   .header-body-item-card {
     page-break-before: always;
+    break-before: page;
   }
 
   .header-body-item-card .text-content {
-    page-break-inside: avoid;
+    page-break-inside: avoid; /* Safari */
+    break-inside: avoid; /* Modern browsers */
+  }
+
+  .questionnaire-details .content-card-body {
+    -webkit-column-gap: 3em;
+       -moz-column-gap: 3em;
+            column-gap: 3em;
   }
 }
 
@@ -27,16 +34,15 @@
   }
 
   .printHeader {
-    display: flex;
-  }
-
-  .printHeader .printFooter {
-    width: 100%;
-  }
-
-  .printHeader {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white; /* Ensures visibility in all browsers */
   }
 
   .printHeader img {
@@ -44,17 +50,15 @@
   }
 
   .printFooter {
-    display: flex;
-
+    width: 100%;
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    background: white; /* Avoids disappearing in some browsers */
   }
 
   .footer-space {
     height: 40px;
   }
-}
-
-@page {
-  margin-top: 2cm;
 }

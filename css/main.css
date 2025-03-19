@@ -12,6 +12,26 @@
   print-color-adjust: exact !important; */
 }
 
+.loading-data {
+  color: transparent;
+}
+
+.loading-data .content-card {
+  border: none;
+  
+  animation: 1s infinite alternate skeleton;
+}
+
+@keyframes skeleton {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
 body {
   min-width: 300px;
   font-family: "Inter";
@@ -28,6 +48,11 @@ table {
 
 img {
   object-fit: contain;
+}
+
+ol {
+  margin: 0;
+  padding-inline-start: 30px;
 }
 
 header {
@@ -128,7 +153,7 @@ button.print:hover {
 
 .content-card-title {
   text-align: left;
-  font-size: large;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -144,7 +169,7 @@ button.print:hover {
   grid-column: span 1;
 }
 
-.content-card.list {
+.content-card.no-border-padding-bg {
   padding: 0;
   border: none;
   background: none;
@@ -161,7 +186,7 @@ button.print:hover {
   background-color: #ffffff;
 }
 
-.list .header {
+.header-body-item-card .header {
   display: flex;
   justify-content: space-between;
   color: #024bdc;
