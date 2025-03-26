@@ -1,0 +1,13 @@
+.loading-data .content-cards {
+    color: transparent;
+}
+
+.loading-data .content-card {
+    border: none;
+
+    animation: 1s infinite alternate skeleton;
+}
+
+.loading-data button.print {
+    display: none;
+}

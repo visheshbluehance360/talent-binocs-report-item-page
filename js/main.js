@@ -16,6 +16,8 @@ function getPageData() {
 
   const url = `https://rprochow.wixsite.com/themindsetiq/_functions/reportpagecontent/${pageItemId}`;
 
+  const body = document.querySelector("body");
+
   fetch(url)
     .then(res => {
       if (res.headers.get('content-type')?.includes('application/json')) {
@@ -23,10 +25,16 @@ function getPageData() {
       }
       return res.text().then(text => { throw new Error(text); });
     })
-    .then(populateData)
+    .then(data => {
+      if (!data || data.error) {
+        body.classList.add("report-not-found");
+      } else {
+        populateData(data);
+      }
+    })
     .catch(console.error)
     .finally(() => {
-      const body = document.querySelector("body");
+
       body.classList.remove("loading-data");
     });
 }

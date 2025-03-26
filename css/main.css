@@ -12,16 +12,6 @@
   print-color-adjust: exact !important; */
 }
 
-.loading-data {
-  color: transparent;
-}
-
-.loading-data .content-card {
-  border: none;
-  
-  animation: 1s infinite alternate skeleton;
-}
-
 @keyframes skeleton {
   from {
     opacity: 0.5;
@@ -57,10 +47,14 @@ ol {
 
 header {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1em 2em;
   border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.report-not-found .report-not-found-message {
+    padding: 1em 2em;
 }
 
 button.print {
@@ -78,6 +72,10 @@ button.print {
 button.print:hover {
   background-color: #ffffff;
   color: var(--primary-color-blue);
+}
+
+.report-not-found-message {
+  display: none;
 }
 
 .printable {

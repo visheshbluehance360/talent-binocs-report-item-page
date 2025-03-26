@@ -1,5 +1,5 @@
 function populateData(data) {
-    console.log(data);
+    console.log("data", data);
 
     populateRecruiterData(data.recruiter);
     populateCandidateData(data.candidate);
