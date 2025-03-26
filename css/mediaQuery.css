@@ -1,4 +1,14 @@
+@media (min-width: 393px) {
+    button.print {
+        padding: 1em 2em;
+    }
+}
+
 @media (min-width: 590px) {
+    .logo {
+        width: auto;
+    }
+
     .content-cards {
         grid-template-columns: 1fr 1fr;
     }

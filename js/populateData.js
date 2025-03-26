@@ -1,5 +1,5 @@
 function populateData(data) {
-    console.log("data", data);
+    console.log(data);
 
     populateRecruiterData(data.recruiter);
     populateCandidateData(data.candidate);
@@ -70,43 +70,53 @@ function populate_index(data) {
 function populateList(data) {
     const listData = data.list;
 
+    listData.forEach((listItemData) => {
+        if (listItemData.howToContents?.length) {
+            listItemData.howToContents.forEach(populateList_howToContent);
+        }
+
+        if (listItemData.reportModule) {
+            populateList_reportModule(data, listItemData.reportModule);
+        }
+    });
+}
+
+function populateList_howToContent(howToContentData) {
     const reportModulesContentCardBody = document.querySelector(
         ".report-modules .content-card-body"
     );
 
-    listData.forEach((listItemData) => {
-        if (listItemData.howToContents?.length) {
-            listItemData.howToContents.forEach((howToContentData) => {
-                const howToContentComponent = new HowToContentComponent(
-                    howToContentData.assignTo?.label,
-                    howToContentData.contents?.reduce((merged, content) =>
-                        [merged, content?.text].filter(Boolean).join(""), ""
-                    )
-                );
+    const howToContentComponent = new HowToContentComponent(
+        howToContentData.assignTo?.label,
+        howToContentData.contents?.reduce((merged, content) =>
+            [merged, content?.text].filter(Boolean).join(""), ""
+        )
+    );
 
-                reportModulesContentCardBody.appendChild(howToContentComponent.element);
-            });
-        }
+    reportModulesContentCardBody.appendChild(howToContentComponent.element);
+}
 
-        if (listItemData.reportModule) {
-            const title = listItemData.reportModule[listItemData.reportModule.assignedTo].title;
-            const scoreText = [listItemData.reportModule.scoreMin, listItemData.reportModule.scoreMax].join("-");
-            const scoreGraphicItem = data.scoreGraphics.find(scoreGraphic =>
-                scoreGraphic.score >= listItemData.reportModule.scoreMin &&
-                scoreGraphic.score <= listItemData.reportModule.scoreMax
-            );
+function populateList_reportModule(data, reportModuleData) {
+    const reportModulesContentCardBody = document.querySelector(
+        ".report-modules .content-card-body"
+    );
 
-            const scoreGraphicUrl = scoreGraphicItem?.image;
+    const title = reportModuleData[reportModuleData.assignedTo].title;
+    const scoreText = [reportModuleData.scoreMin, reportModuleData.scoreMax].join("-");
+    const scoreGraphicItem = data.scoreGraphics.find(scoreGraphic =>
+        scoreGraphic.score >= reportModuleData.scoreMin &&
+        scoreGraphic.score <= reportModuleData.scoreMax
+    );
 
-            const reportModuleComponent = new ReportModuleComponent(
-                title,
-                scoreText ? `${scoreText}%` : "",
-                listItemData.reportModule.summary,
-                scoreGraphicUrl,
-                listItemData.reportModule.reportText
-            );
+    const scoreGraphicUrl = scoreGraphicItem?.image;
 
-            reportModulesContentCardBody.appendChild(reportModuleComponent.element);
-        }
-    });
+    const reportModuleComponent = new ReportModuleComponent(
+        title,
+        scoreText ? `${scoreText}%` : "",
+        reportModuleData.summary,
+        scoreGraphicUrl,
+        reportModuleData.reportText
+    );
+
+    reportModulesContentCardBody.appendChild(reportModuleComponent.element);
 }

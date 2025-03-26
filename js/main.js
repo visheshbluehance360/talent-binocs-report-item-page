@@ -12,9 +12,11 @@ addEventListener("load", () => {
 });
 
 function getPageData() {
-  const pageItemId = "d2422e94-a655-4637-9756-8959edf91119";
+  const siteMainUrl = "https://rprochow.wixsite.com/themindsetiq";
+  const httpFunctionName = "reportpagecontent";
+  const pageItemId = "e005e670-abd8-4555-a8b4-ff8f0e6f07c9";
 
-  const url = `https://rprochow.wixsite.com/themindsetiq/_functions/reportpagecontent/${pageItemId}`;
+  const url = `${siteMainUrl}/_functions/${httpFunctionName}/${pageItemId}`;
 
   const body = document.querySelector("body");
 
