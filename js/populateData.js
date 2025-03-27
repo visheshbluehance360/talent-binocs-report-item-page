@@ -87,10 +87,7 @@ function populateList_howToContent(howToContentData) {
     );
 
     const howToContentComponent = new HowToContentComponent(
-        howToContentData.assignTo?.label,
-        howToContentData.contents?.reduce((merged, content) =>
-            [merged, content?.text].filter(Boolean).join(""), ""
-        )
+        howToContentData.assignTo?.label, howToContentData.contents
     );
 
     reportModulesContentCardBody.appendChild(howToContentComponent.element);

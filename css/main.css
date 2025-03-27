@@ -202,9 +202,12 @@ button.print:hover {
 .header-body-item-card .body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 1.2em;
   color: #232323;
+}
+
+.report-module-item.header-body-item-card .body {
+  gap: 20px;
 }
 
 .text-content .title {

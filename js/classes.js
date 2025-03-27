@@ -158,14 +158,16 @@ class TextContentComponent {
 class HowToContentComponent {
   _title = '';
   _body = '';
+  _contents = [];
 
-  constructor(title = "", body = "") {
+  constructor(title = "", contents = []) {
     this.type = "HowToContentComponent";
     this._title = title;
-    this._body = body;
+    this._contents = contents;
 
     this.titleElement = this.createTitleElement();
     this.bodyElement = this.createBodyElement();
+
     this.element = this.createElement();
   }
 
@@ -185,11 +187,14 @@ class HowToContentComponent {
     const body = document.createElement("div");
     body.classList.add("body");
 
-    const textContentBody = document.createElement("div");
-    textContentBody.classList.add("text-content-body");
-    textContentBody.innerHTML = this._body;
-    
-    body.appendChild(textContentBody);
+    this.contents.filter(content => content.text)
+      .forEach((content) => {
+        const textContentBody = document.createElement("div");
+        textContentBody.classList.add("text-content-body");
+        textContentBody.innerHTML = content.text;
+
+        body.append(textContentBody);
+      });
 
     return body;
   }
@@ -206,21 +211,17 @@ class HowToContentComponent {
 
   set title(value) {
     this._title = value;
-
-    this.titleElement.textContent = value;
   }
 
   get title() {
     return this._title;
   }
 
-  set body(value) {
-    this._body = value;
-
-    this.bodyElement.textContent = value;
+  set contents(value) {
+    this._contents = value;
   }
 
-  get body() {
-    return this._body;
+  get contents() {
+    return this._contents;
   }
 }
