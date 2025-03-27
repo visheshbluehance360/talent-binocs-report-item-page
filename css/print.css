@@ -1,14 +1,14 @@
 .list.content-card,
 .header-body-item-card {
-  page-break-before: always;
+  /* page-break-before: always; */
   break-before: page;
 }
 
 .header-body-item-card .text-content, .text-content-body {
-  page-break-inside: avoid;
-  /* Safari */
+  /* page-break-inside: avoid; */
   break-inside: avoid;
-  /* Modern browsers */
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
 }
 
 @media print {

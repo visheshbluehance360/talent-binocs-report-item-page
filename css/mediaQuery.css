@@ -11,10 +11,12 @@
 
     .content-cards {
         grid-template-columns: 1fr 1fr;
+        column-count: 2;
     }
 
     .content-card.full-width {
         grid-column: span 2;
+        column-span: all;
     }
 
     .questionnaire-details .content-card-body {
@@ -26,5 +28,6 @@
     .recruiter.content-card,
     .candidate.content-card {
         grid-column: span 1;
+        column-span: none;
     }
 }
