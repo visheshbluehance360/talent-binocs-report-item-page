@@ -4,7 +4,7 @@
   break-before: page;
 }
 
-.header-body-item-card .text-content {
+.header-body-item-card .text-content, .text-content-body {
   page-break-inside: avoid;
   /* Safari */
   break-inside: avoid;
