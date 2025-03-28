@@ -1,9 +1,9 @@
-.list.content-card, td {
+.list.content-card, .first-page, td:not(:last-child) {
   page-break-after: always;
   break-after: page;
 }
 
-.header-body-item-card .text-content, .text-content-body {
+.header-body-item-card .text-content, .text-content-body, tr {
   page-break-inside: avoid;
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
