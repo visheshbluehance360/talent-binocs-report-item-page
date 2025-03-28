@@ -6,6 +6,8 @@
 * {
   box-sizing: border-box;
   overflow-wrap: anywhere;
+  font-family: "Inter";
+  font-optical-sizing: auto;
 
   /* -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
@@ -24,8 +26,6 @@
 
 body {
   min-width: 300px;
-  font-family: "Inter";
-  font-optical-sizing: auto;
   background-color: #f3f3f3;
   margin: 0;
   color: #232323;
