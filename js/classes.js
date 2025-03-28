@@ -73,7 +73,7 @@ class ReportModuleComponent {
   }
 
   get element() {
-    const element = document.createElement("div");
+    const element = document.createElement("td");
     element.classList.add("report-module-item", "header-body-item-card");
 
     const header = document.createElement("div");
@@ -200,7 +200,7 @@ class HowToContentComponent {
   }
 
   createElement() {
-    const element = document.createElement("div");
+    const element = document.createElement("td");
     element.classList.add("how-to-content-item", "header-body-item-card");
 
     element.appendChild(this.titleElement);

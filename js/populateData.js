@@ -82,21 +82,17 @@ function populateList(data) {
 }
 
 function populateList_howToContent(howToContentData) {
-    const reportModulesContentCardBody = document.querySelector(
-        ".report-modules .content-card-body"
-    );
+    const howToContentElement = document.querySelector(".how-to-content");
 
     const howToContentComponent = new HowToContentComponent(
         howToContentData.assignTo?.label, howToContentData.contents
     );
 
-    reportModulesContentCardBody.appendChild(howToContentComponent.element);
+    howToContentElement.appendChild(howToContentComponent.element);
 }
 
 function populateList_reportModule(data, reportModuleData) {
-    const reportModulesContentCardBody = document.querySelector(
-        ".report-modules .content-card-body"
-    );
+    const reportModulesContentCardBody = document.querySelector(".report-modules");
 
     const title = reportModuleData[reportModuleData.assignedTo].title;
     const scoreText = [reportModuleData.scoreMin, reportModuleData.scoreMax].join("-");

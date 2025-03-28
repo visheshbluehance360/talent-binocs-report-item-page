@@ -1,11 +1,10 @@
-.list.content-card,
-.header-body-item-card {
-  /* page-break-before: always; */
-  break-before: page;
+.list.content-card, td {
+  page-break-after: always;
+  break-after: page;
 }
 
 .header-body-item-card .text-content, .text-content-body {
-  /* page-break-inside: avoid; */
+  page-break-inside: avoid;
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;

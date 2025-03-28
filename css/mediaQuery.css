@@ -9,13 +9,11 @@
         width: auto;
     }
 
-    .content-cards {
-        grid-template-columns: 1fr 1fr;
+    .first-page {
         column-count: 2;
     }
 
     .content-card.full-width {
-        grid-column: span 2;
         column-span: all;
     }
 
@@ -27,7 +25,6 @@
 @media (min-width: 900px) {
     .recruiter.content-card,
     .candidate.content-card {
-        grid-column: span 1;
         column-span: none;
     }
 }
