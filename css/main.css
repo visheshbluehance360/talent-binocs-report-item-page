@@ -87,10 +87,15 @@ button.print:hover {
   margin: 0 auto;
 }
 
-.first-page {
+.first-page td {
   gap: 1.2em;
   padding: 0.5em 1em 0;
   column-gap: 1.2em;
+}
+
+td {
+  display: block;
+  margin-bottom: 1.2em;
 }
 
 .content-card {
@@ -109,7 +114,7 @@ button.print:hover {
 }
 
 .content-card:last-child {
-  margin-bottom: 0.6em;
+  margin-bottom: 0;
 }
 
 .recruiter.content-card,
@@ -226,13 +231,13 @@ button.print:hover {
 }
 
 .report-modules, .how-to-content {
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 
   gap: 1.2em;
-  padding: 0.5em 1em 2em;
+  padding: 0 1em 2em;
   column-gap: 1.2em;
 }
 
