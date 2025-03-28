@@ -250,7 +250,6 @@ button.print:hover {
 }
 
 .printHeader {
-  display: flex;
   align-items: center;
   gap: 2em;
   width: 100%;
