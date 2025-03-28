@@ -36,6 +36,15 @@ table {
   width: 100%;
 }
 
+tr {
+  display: block;
+}
+
+td {
+  display: block;
+  margin-bottom: 1.2em;
+}
+
 img {
   object-fit: contain;
 }
@@ -91,11 +100,6 @@ button.print:hover {
   gap: 1.2em;
   padding: 0.5em 1em 0;
   column-gap: 1.2em;
-}
-
-td {
-  display: block;
-  margin-bottom: 1.2em;
 }
 
 .content-card {
