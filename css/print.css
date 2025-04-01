@@ -1,9 +1,13 @@
-.list.content-card, .first-page, td:not(:last-child) {
+.list.content-card,
+.first-page,
+td:not(:last-child) {
   page-break-after: always;
   break-after: page;
 }
 
-.header-body-item-card .text-content, .text-content-body, tr {
+.header-body-item-card .text-content,
+.text-content-body,
+tr {
   page-break-inside: avoid;
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
@@ -13,7 +17,6 @@
 @media print {
   body {
     background-color: transparent !important;
-
     height: auto;
   }
 
@@ -29,39 +32,7 @@
 }
 
 @media print {
-  .printHeader,
-  .header-space {
-    height: 100px;
-  }
-
   .printHeader {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: white;
-    /* Ensures visibility in all browsers */
-  }
-
-  .printHeader img {
-    height: 100%;
-  }
-
-  .printFooter {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    /* Avoids disappearing in some browsers */
-  }
-
-  .footer-space {
-    height: 40px;
   }
 }

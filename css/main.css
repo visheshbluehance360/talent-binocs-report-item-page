@@ -63,7 +63,7 @@ header {
 }
 
 .report-not-found .report-not-found-message {
-    padding: 1em 2em;
+  padding: 1em 2em;
 }
 
 .logo {
@@ -98,8 +98,12 @@ button.print:hover {
 
 .first-page td {
   gap: 1.2em;
-  padding: 0.5em 1em 0;
   column-gap: 1.2em;
+}
+
+.content-cards {
+  display: block;
+  padding: 1em 2em 3em 2em;
 }
 
 .content-card {
@@ -234,14 +238,14 @@ button.print:hover {
   padding: 1em;
 }
 
-.report-modules, .how-to-content {
+.report-modules,
+.how-to-content {
   display: block;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 
   gap: 1.2em;
-  padding: 0 1em 2em;
   column-gap: 1.2em;
 }
 
@@ -251,9 +255,10 @@ button.print:hover {
 
 .printHeader {
   align-items: center;
+  justify-content: center;
   gap: 2em;
   width: 100%;
-  padding-bottom: 40px;
+  padding-top: 1.2em;
 }
 
 .printHeader {
@@ -264,6 +269,10 @@ button.print:hover {
   flex: 1;
   height: 1;
   border: 1px solid #d0d0d0;
+}
+
+.printHeader img {
+  height: 100%;
 }
 
 .printFooter {
