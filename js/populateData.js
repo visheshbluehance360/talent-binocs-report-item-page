@@ -82,7 +82,7 @@ function populateList(data) {
 }
 
 function populateList_howToContent(howToContentData) {
-    const howToContentElement = document.querySelector(".how-to-content");
+    const howToContentElement = document.querySelector(".content-cards");
 
     const howToContentComponent = new HowToContentComponent(
         howToContentData.assignTo?.label, howToContentData.contents
@@ -92,7 +92,7 @@ function populateList_howToContent(howToContentData) {
 }
 
 function populateList_reportModule(data, reportModuleData) {
-    const reportModulesContentCardBody = document.querySelector(".report-modules");
+    const reportModulesContentCardBody = document.querySelector(".content-cards");
 
     const title = reportModuleData[reportModuleData.assignedTo].title;
     const scoreText = [reportModuleData.scoreMin, reportModuleData.scoreMax].join("-");

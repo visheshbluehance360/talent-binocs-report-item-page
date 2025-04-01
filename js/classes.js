@@ -73,8 +73,11 @@ class ReportModuleComponent {
   }
 
   get element() {
-    const element = document.createElement("td");
-    element.classList.add("report-module-item", "header-body-item-card");
+    const element = document.createElement("tr");
+    element.classList.add("report-modules", "full-width", "list", "no-border-padding-bg");
+
+    const td = document.createElement("td");
+    td.classList.add("report-module-item", "header-body-item-card");
 
     const header = document.createElement("div");
     header.classList.add("header");
@@ -93,7 +96,7 @@ class ReportModuleComponent {
       header.appendChild(headerRightText);
     }
 
-    element.appendChild(header);
+    td.appendChild(header);
 
     const body = document.createElement("div");
     body.classList.add("body");
@@ -123,7 +126,9 @@ class ReportModuleComponent {
       body.appendChild(textContent_ComprehensiveReport.element);
     }
 
-    element.appendChild(body);
+    td.appendChild(body);
+
+    element.appendChild(td);
 
     return element;
   }
@@ -200,11 +205,16 @@ class HowToContentComponent {
   }
 
   createElement() {
-    const element = document.createElement("td");
-    element.classList.add("how-to-content-item", "header-body-item-card");
+    const element = document.createElement("tr");
+    element.classList.add("how-to-content", "full-width", "list", "no-border-padding-bg");
 
-    element.appendChild(this.titleElement);
-    element.appendChild(this.bodyElement);
+    const td = document.createElement("td");
+    td.classList.add("how-to-content-item", "header-body-item-card");
+
+    td.appendChild(this.titleElement);
+    td.appendChild(this.bodyElement);
+
+    element.appendChild(td);
 
     return element;
   }

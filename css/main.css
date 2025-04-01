@@ -36,12 +36,12 @@ table {
   width: 100%;
 }
 
-tr {
+/* tbody tr {
   display: block;
-}
+} */
 
-td {
-  display: block;
+tbody td {
+  /* display: block; */
   margin-bottom: 1.2em;
 }
 
@@ -256,6 +256,7 @@ button.print:hover {
 .printHeader {
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 2em;
   width: 100%;
   padding-top: 1.2em;
@@ -267,7 +268,7 @@ button.print:hover {
 
 .printHeader hr {
   flex: 1;
-  height: 1;
+  height: 1px;
   border: 1px solid #d0d0d0;
 }
 
