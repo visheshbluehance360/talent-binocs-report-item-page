@@ -36,12 +36,11 @@ table {
   width: 100%;
 }
 
-/* tbody tr {
-  display: block;
-} */
-
 tbody td {
-  /* display: block; */
+  display: block;
+}
+
+.first-page {
   margin-bottom: 1.2em;
 }
 
@@ -68,6 +67,18 @@ header {
 
 .logo {
   width: 200px;
+}
+
+td .logo-container {
+  width: 100%;
+  display: none;
+  padding: 1em 0 1em 0;
+  column-span: all;
+  text-align: center;
+}
+
+.logo-container .logo {
+  display: inline;
 }
 
 button.print {
@@ -103,7 +114,7 @@ button.print:hover {
 
 .content-cards {
   display: block;
-  padding: 1em 2em 3em 2em;
+  padding: 1em 1em 3em 1em;
 }
 
 .content-card {
@@ -239,14 +250,8 @@ button.print:hover {
 }
 
 .report-modules,
-.how-to-content {
+.how-to-content, .first-page {
   display: block;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  gap: 1.2em;
-  column-gap: 1.2em;
 }
 
 .score-gauge {

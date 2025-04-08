@@ -74,10 +74,23 @@ class ReportModuleComponent {
 
   get element() {
     const element = document.createElement("tr");
-    element.classList.add("report-modules", "full-width", "list", "no-border-padding-bg");
+    element.classList.add("report-modules", "full-width", "list", "no-border-padding-bg", "content-card");
 
     const td = document.createElement("td");
-    td.classList.add("report-module-item", "header-body-item-card");
+
+    const logoContainer = document.createElement("div");
+    logoContainer.classList.add("logo-container");
+
+    const logo = document.createElement("img");
+    logo.classList.add("logo");
+    logo.src = "/logo.svg";
+
+    logoContainer.appendChild(logo);
+
+    td.appendChild(logoContainer);
+
+    const card = document.createElement("div");
+    card.classList.add("report-module-item", "header-body-item-card");
 
     const header = document.createElement("div");
     header.classList.add("header");
@@ -96,7 +109,7 @@ class ReportModuleComponent {
       header.appendChild(headerRightText);
     }
 
-    td.appendChild(header);
+    card.appendChild(header);
 
     const body = document.createElement("div");
     body.classList.add("body");
@@ -126,7 +139,9 @@ class ReportModuleComponent {
       body.appendChild(textContent_ComprehensiveReport.element);
     }
 
-    td.appendChild(body);
+    card.appendChild(body);
+
+    td.appendChild(card);
 
     element.appendChild(td);
 
@@ -206,13 +221,28 @@ class HowToContentComponent {
 
   createElement() {
     const element = document.createElement("tr");
-    element.classList.add("how-to-content", "full-width", "list", "no-border-padding-bg");
+    element.classList.add("how-to-content", "full-width", "list", "no-border-padding-bg", "content-card");
 
     const td = document.createElement("td");
-    td.classList.add("how-to-content-item", "header-body-item-card");
 
-    td.appendChild(this.titleElement);
-    td.appendChild(this.bodyElement);
+    const logoContainer = document.createElement("div");
+    logoContainer.classList.add("logo-container");
+
+    const logo = document.createElement("img");
+    logo.classList.add("logo");
+    logo.src = "/logo.svg";
+
+    logoContainer.appendChild(logo);
+
+    td.appendChild(logoContainer);
+
+    const card = document.createElement("div");
+    card.classList.add("how-to-content-item", "header-body-item-card");
+
+    card.appendChild(this.titleElement);
+    card.appendChild(this.bodyElement);
+
+    td.appendChild(card);
 
     element.appendChild(td);
 

@@ -4,7 +4,7 @@
     }
 }
 
-@media (min-width: 590px) {
+@media (min-width: 590px) { /* tab and bigger screens */
     .logo {
         width: auto;
     }
@@ -20,9 +20,14 @@
     .questionnaire-details .content-card-body {
         column-gap: 6em;
     }
+
+    .content-cards {
+        padding: 2em 2em 3em 2em;
+    }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) { /* wide screen monitor and bigger screens */
+
     .recruiter.content-card,
     .candidate.content-card {
         column-span: none;

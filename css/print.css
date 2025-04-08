@@ -1,4 +1,4 @@
-.list.content-card,
+.list.content-card:not(:last-child),
 .first-page,
 tbody td:not(:last-child) {
   page-break-after: always;
@@ -24,15 +24,21 @@ tbody tr {
     display: none !important;
   }
 
+  .printHeader {
+    display: table-header-group !important;
+  }
+
   .questionnaire-details .content-card-body {
     -webkit-column-gap: 3em;
     -moz-column-gap: 3em;
     column-gap: 3em;
   }
-}
 
-@media print {
-  .printHeader {
-    display: table-header-group !important;
+  td .logo-container {
+    display: block;
   }
+
+  .content-cards {
+    padding: 0;
+}
 }
