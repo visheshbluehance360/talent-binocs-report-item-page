@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>TB - Report</title>
+
   <link rel="shortcut icon" href="/logo.svg" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
@@ -313,18 +316,18 @@
     }
   </style>
 
-  <style id="loading-data">
-    .loading-data .content-cards {
+  <style id="loaded-data">
+    .content-cards:not(.loaded-data .content-cards) {
       color: transparent;
     }
 
-    .loading-data .content-card {
+    .content-card:not(.loaded-data .content-card) {
       border: none;
 
       animation: 1s infinite alternate skeleton;
     }
 
-    .loading-data button.print {
+    button.print:not(.loaded-data .print) {
       display: none;
     }
   </style>
@@ -438,7 +441,7 @@
   </style>
 </head>
 
-<body class="loading-data">
+<body>
   <header>
     <img class="logo" src="logo.svg" alt="Header Image">
     <button class="print">Print</button>
@@ -917,7 +920,7 @@
   </script>
 
   <script>
-    const testMode = true;
+    const testMode = false;
 
     addEventListener("load", () => {
       const printButton = document.querySelector("button.print");
@@ -925,9 +928,6 @@
       printButton.addEventListener("click", () => {
         window.print();
       });
-
-      const body = document.querySelector("body");
-      body.classList.add("loading-data");
 
       testMode ? loadTestData() :
         getPageData();
@@ -33005,13 +33005,16 @@
       populateData(sampleData);
 
       const body = document.querySelector("body");
-      body.classList.remove("loading-data");
+      body.classList.add("loaded-data");
     }
 
     function getPageData() {
-      const siteMainUrl = "https://rprochow.wixsite.com/themindsetiq";
+      const siteMainUrl = "https://www.themindsetiq.com";
       const httpFunctionName = "reportpagecontent";
-      const pageItemId = "e005e670-abd8-4555-a8b4-ff8f0e6f07c9";
+
+      const searchParams = new URLSearchParams(window.location.search);
+
+      const pageItemId = searchParams.get("itemId");
 
       const url = `${siteMainUrl}/_functions/${httpFunctionName}/${pageItemId}`;
 
@@ -33033,7 +33036,7 @@
         })
         .catch(console.error)
         .finally(() => {
-          body.classList.remove("loading-data");
+          body.classList.add("loaded-data");
         });
     }
   </script>
