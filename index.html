@@ -259,8 +259,6 @@
     }
 
     .report-page-root .header-body-item-card .header {
-      display: flex;
-      justify-content: space-between;
       color: #024bdc;
       font-weight: 500;
       border-bottom: 1px solid var(--color-border);
@@ -269,9 +267,20 @@
       text-transform: uppercase;
     }
 
+    .report-page-root .header-body-item-card .header .title {
+      display: inline-block;
+      width: calc(100% - 200px);
+      vertical-align: top;
+    }
+
+    .report-page-root .header-right-text {
+      display: inline-block;
+      width: 200px;
+      vertical-align: top;
+      text-align: right;
+    }
+
     .report-page-root .header-body-item-card .body {
-      display: flex;
-      flex-direction: column;
       padding: 0.6em 1.2em 1.2em 1.2em;
       color: #232323;
     }
@@ -279,6 +288,10 @@
     .report-page-root .report-module-item.header-body-item-card .body {
       gap: 20px;
       padding-top: 1.2em;
+    }
+
+    .report-page-root .report-module-item.header-body-item-card .body > *:not(:last-child) {
+      margin-bottom: 20px;
     }
 
     .report-page-root .text-content .title {
@@ -422,17 +435,25 @@
     .report-page-root .list.content-card:not(:last-child),
     .report-page-root .first-page,
     .report-page-root tbody td:not(:last-child) {
-      /* page-break-after: always; */
+      page-break-after: always;
       break-after: page;
     }
 
-    .report-page-root .text-content,
-    .report-page-root .text-content-body {
-      /* page-break-inside: avoid; */
-      break-inside: avoid-page;
-      /* -webkit-column-break-inside: avoid-page;
-      -moz-column-break-inside: avoid-page; */
+    .report-page-root .text-content:not(:first-child),
+    .report-page-root .text-content-body:not(:first-child) {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      -moz-column-break-inside: avoid;
     }
+
+    /* .report-page-root .text-content,
+    .report-page-root .text-content-body:first-child {
+      page-break-inside: auto;
+      break-inside: auto;
+      -webkit-column-break-inside: auto;
+      -moz-column-break-inside: auto;
+    } */
 
     @media print {
       .report-page-root {
