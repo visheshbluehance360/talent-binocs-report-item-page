@@ -108,7 +108,7 @@
     .report-page-root td .logo-container {
       width: 100%;
       display: none;
-      padding: 1em 0 1em 0;
+      margin: 0 0 1em 0;
       column-span: all;
       text-align: center;
     }
@@ -290,7 +290,7 @@
       padding-top: 1.2em;
     }
 
-    .report-page-root .report-module-item.header-body-item-card .body > *:not(:last-child) {
+    .report-page-root .report-module-item.header-body-item-card .body>*:not(:last-child) {
       margin-bottom: 20px;
     }
 
@@ -309,6 +309,8 @@
     }
 
     .report-page-root .score-gauge {
+      width: 100%;
+      height: auto;
       max-height: 200px;
     }
 
@@ -483,6 +485,10 @@
       .report-page-root .content-cards {
         padding: 0;
       }
+    }
+
+    @page {
+      margin-top: 0.5in;
     }
   </style>
 </head>
@@ -969,18 +975,6 @@
     }
   </script>
 
-  <script id="init">
-    addEventListener("load", () => {
-      const printButton = document.querySelector("button.print");
-
-      printButton.addEventListener("click", () => {
-        window.print();
-      });
-
-      getPageData();
-    });
-  </script>
-
   <script id="fetchData">
     function getPageData() {
       const siteMainUrl = "https://www.themindsetiq.com";
@@ -1042,6 +1036,18 @@
 
     observer.observe(document, { subtree: true, childList: true });
 
+  </script>
+
+  <script id="init">
+    addEventListener("load", () => {
+      const printButton = document.querySelector("button.print");
+
+      printButton.addEventListener("click", () => {
+        window.print();
+      });
+
+      getPageData();
+    });
   </script>
 
 </body>
