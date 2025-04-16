@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=320, user-scalable=yes" id="wixMobileViewport">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
 
   <title>TB - Report</title>
 
@@ -15,6 +17,10 @@
     rel="stylesheet">
 
   <style id="main">
+    body:has(.report-page-root) {
+      margin: 0;
+    }
+
     body:not(.siteScrollingBlocked) #SITE_CONTAINER {
       display: none;
     }
@@ -95,6 +101,10 @@
       align-items: center;
       padding: 1em 2em;
       border-bottom: 1px solid rgb(219, 219, 219);
+
+      background: inherit;
+      position: sticky;
+      top: 0;
     }
 
     .report-page-root.report-not-found .report-not-found-message {
@@ -434,15 +444,16 @@
   </style>
 
   <style id="print">
+    .report-page-root .text-content-body:not(:last-child),
     .report-page-root .list.content-card:not(:last-child),
     .report-page-root .first-page,
     .report-page-root tbody td:not(:last-child) {
       page-break-after: always;
-      break-after: page;
+      break-after: always;
     }
 
-    .report-page-root .text-content:not(:first-child),
-    .report-page-root .text-content-body:not(:first-child) {
+    /* .report-page-root .text-content-body:not(:first-child), */
+    .report-page-root .text-content:not(:first-child) {
       page-break-inside: avoid;
       break-inside: avoid;
       -webkit-column-break-inside: avoid;
@@ -491,6 +502,10 @@
       margin-top: 0.5in;
     }
   </style>
+
+  <script>
+    document.querySelector("#wixMobileViewport").remove();
+  </script>
 </head>
 
 <body>
