@@ -448,8 +448,9 @@
     .report-page-root .list.content-card:not(:last-child),
     .report-page-root .first-page,
     .report-page-root tbody td:not(:last-child) {
-      page-break-after: always;
-      break-after: always;
+      break-after: page;
+      -moz-column-break-after: page;
+      -webkit-column-break-after: page;
     }
 
     /* .report-page-root .text-content-body:not(:first-child), */
