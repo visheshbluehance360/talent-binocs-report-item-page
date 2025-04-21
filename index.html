@@ -923,19 +923,36 @@
     }
 
     function populate_index(data) {
-      const howToContentCategories_filtered = data?.howToContentCategories?.filter(howToContentCategory => {
-        return data?.list.find(listItem => {
-          return listItem.howToContents?.find(howToContent => {
-            return howToContent.assignTo?.value == howToContentCategory?.value;
-          });
+      const howToContentCategories_forIndex = [];
+
+      let howToContentList = [];
+
+      data?.list?.forEach(listItem => {
+        listItem?.howToContents?.forEach(howToContent => {
+          if (!howToContentList.find(howToContentItem => howToContentItem._id == howToContent._id)) {
+            howToContentList.push(howToContent);
+          }
         });
       });
 
-      console.log("howToContentCategories_filtered", howToContentCategories_filtered);
+      console.log("howToContentList", howToContentList);
+
+      howToContentList.forEach(howToContentListItem => {
+        data?.howToContentCategories?.forEach(howToContentCategory => {
+          if (
+            howToContentCategory.value == howToContentListItem.assignTo?.value &&
+            !howToContentCategories_forIndex.find(item => item.label == howToContentCategory.label)
+          ) {
+            howToContentCategories_forIndex.push(howToContentCategory);
+          }
+        });
+      });
+
+      console.log("howToContentCategories_forIndex", howToContentCategories_forIndex);
 
       const indexElement = document.querySelector(".index .content-card-body ol");
 
-      howToContentCategories_filtered.forEach((indexItem) => {
+      howToContentCategories_forIndex.forEach((indexItem) => {
         const indexItemElement = document.createElement("li");
         indexItemElement.innerText = indexItem.label;
         indexElement.appendChild(indexItemElement);
