@@ -16,7 +16,15 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
 
+  <script>
+    document.querySelector("#wixMobileViewport")?.remove();
+  </script>
+
   <style id="main">
+    .displayNone {
+      display: none !important;
+    }
+
     body:has(.report-page-root) {
       margin: 0;
     }
@@ -503,10 +511,6 @@
       margin-top: 0.5in;
     }
   </style>
-
-  <script>
-    document.querySelector("#wixMobileViewport").remove();
-  </script>
 </head>
 
 <body>
@@ -890,8 +894,8 @@
       const recruiterNameElement = document.querySelector(".recruiter .name");
       const recruiterEmailElement = document.querySelector(".recruiter .email");
 
-      recruiterNameElement.textContent = recruiterData.name;
-      recruiterEmailElement.textContent = recruiterData.email;
+      recruiterNameElement.textContent = recruiterData?.name || "";
+      recruiterEmailElement.textContent = recruiterData?.email || "";
     }
 
     function populateCandidateData(candidateData) {
