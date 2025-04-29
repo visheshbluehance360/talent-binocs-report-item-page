@@ -291,6 +291,11 @@
       vertical-align: top;
     }
 
+    .report-page-root .how-to-content-item .header .title {
+      font-weight: 700;
+      color: #FF7622;
+    }
+
     .report-page-root .header-right-text {
       display: inline-block;
       width: 200px;
@@ -915,6 +920,11 @@
         "Name", questionnaireData.name
       );
       questionnaireDetailsBody.appendChild(detailItem_questionnaireName.element);
+
+      const detailItem_questionnaireType = new DetailItemComponent(
+        "Type of Report:", questionnaireData.type
+      );
+      questionnaireDetailsBody.appendChild(detailItem_questionnaireType.element);
 
       const detailItem_questionnaireDate = new DetailItemComponent(
         "Date of Report:", formatDate(questionnaireData.date)
