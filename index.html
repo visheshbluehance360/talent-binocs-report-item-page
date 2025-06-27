@@ -912,6 +912,16 @@
         });
       });
 
+      const list = data?.reportContent?.reportModuleContentListItems?.reduce(read_all_howToContents, []);
+
+      howToContentList = howToContentList.concat(list);
+
+      data?.reportContent?.finalListItems?.forEach((listItem) => {
+        listItem?.howToContents?.forEach((howToContent) => {
+          howToContentList.push(howToContent);
+        });
+      });
+
       howToContentList.forEach((howToContentListItem) => {
         data?.howToContentCategories?.forEach((howToContentCategory) => {
           if (
@@ -947,10 +957,22 @@
       indexElement.classList.remove('displayNone');
     }
 
+    function read_all_howToContents(list, reportModuleContentListItem) {
+      if (reportModuleContentListItem?.howToContents) {
+        list = list.concat(reportModuleContentListItem.howToContents);
+      }
+
+      const subList = reportModuleContentListItem?.childrenReportModuleItems?.reduce(read_all_howToContents, []);
+
+      if (subList?.length) {
+        list = list.concat(subList);
+      }
+
+      return list;
+    }
+
     function populate_list() {
       try {
-        console.log('to use new structure for list content...');
-
         data.reportContent.initialListItems.forEach(populate_listItem);
 
         data.reportContent.reportModuleContentListItems.forEach(populate_reportModuleContentListItem);
