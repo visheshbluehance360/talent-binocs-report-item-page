@@ -606,7 +606,10 @@
       });
     }
   </script>
+
   <script id="classes">
+    let data;
+
     class DetailItemComponent {
       _title = "";
       _body = "";
@@ -825,36 +828,40 @@
       }
     }
   </script>
+
   <script id="populateData">
-    function populateData(data) {
+    function populateData() {
       console.log(data);
 
       try {
-        populateRecruiterData(data.recruiter);
-        populateCandidateData(data.candidate);
-        populateQuestionnaireData(data.questionnaire);
-        populate_index(data);
-        populateList(data);
+        populate_recruiterData(data.recruiter);
+        populate_candidateData(data.candidate);
+        populate_questionnaireData(data.questionnaire);
+        populate_index();
+
+        populate_list();
       } catch (error) {
         console.error("Error populating data:", error);
       }
     }
 
-    function populateRecruiterData(recruiterData) {
+    function populate_recruiterData(recruiterData) {
       const recruiterNameElement = document.querySelector(".recruiter .name");
       const recruiterEmailElement =
         document.querySelector(".recruiter .email");
       recruiterNameElement.textContent = recruiterData?.name || "";
       recruiterEmailElement.textContent = recruiterData?.email || "";
     }
-    function populateCandidateData(candidateData) {
+
+    function populate_candidateData(candidateData) {
       const recruiterNameElement = document.querySelector(".candidate .name");
       const recruiterEmailElement =
         document.querySelector(".candidate .email");
       recruiterNameElement.textContent = candidateData.name;
       recruiterEmailElement.textContent = candidateData.email;
     }
-    function populateQuestionnaireData(questionnaireData) {
+
+    function populate_questionnaireData(questionnaireData) {
       const questionnaireDetailsBody = document.querySelector(
         ".questionnaire-details .content-card-body"
       );
@@ -888,12 +895,12 @@
       );
     }
 
-    function populate_index(data) {
+    function populate_index() {
       const howToContentCategories_forIndex = [];
 
       let howToContentList = [];
 
-      data?.list?.forEach((listItem) => {
+      data?.reportContent?.initialListItems?.forEach((listItem) => {
         listItem?.howToContents?.forEach((howToContent) => {
           if (
             !howToContentList.find(
@@ -940,28 +947,43 @@
       indexElement.classList.remove('displayNone');
     }
 
-    function populateList(data) {
+    function populate_list() {
       try {
-        const listData = data.list;
-
         console.log('to use new structure for list content...');
 
-        return false;
+        data.reportContent.initialListItems.forEach(populate_listItem);
 
-        listData.forEach((listItemData) => {
-          if (listItemData.howToContents?.length) {
-            listItemData.howToContents.forEach(populateList_howToContent);
-          }
-          if (listItemData.reportModule) {
-            populateList_reportModule(data, listItemData.reportModule);
-          }
-        });
+        data.reportContent.reportModuleContentListItems.forEach(populate_reportModuleContentListItem);
+
+        data.reportContent.finalListItems.forEach(populate_listItem);
+
       } catch (error) {
         console.error('error while trying to populate list', error);
       }
     }
 
-    function populateList_howToContent(howToContentData) {
+    function populate_reportModuleContentListItem(reportModuleContentListItem) {
+      try {
+        reportModuleContentListItem?.howToContents?.forEach(populate_list_howToContent);
+
+        reportModuleContentListItem?.itemReportModules?.forEach(itemReportModule => populate_list_reportModule(itemReportModule));
+
+        reportModuleContentListItem?.childrenReportModuleItems?.forEach(populate_reportModuleContentListItem);
+      } catch (error) {
+        console.error('error in populate_reportModuleContentListItem', error, 'for item', reportModuleContentListItem);
+      }
+    }
+
+    function populate_listItem(listItemData) {
+      if (listItemData.howToContents?.length) {
+        listItemData.howToContents.forEach(populate_list_howToContent);
+      }
+      if (listItemData.reportModule) {
+        populate_list_reportModule(listItemData.reportModule);
+      }
+    }
+
+    function populate_list_howToContent(howToContentData) {
       const howToContentElement = document.querySelector(".content-cards");
       const howToContentComponent = new HowToContentComponent(
         howToContentData.assignTo?.label,
@@ -969,7 +991,7 @@
       );
       howToContentElement.appendChild(howToContentComponent.element);
     }
-    function populateList_reportModule(data, reportModuleData) {
+    function populate_list_reportModule(reportModuleData) {
       const reportModulesContentCardBody =
         document.querySelector(".content-cards");
       const title = reportModuleData[reportModuleData.assignedTo].title;
@@ -995,7 +1017,7 @@
   </script>
 
   <script id="fetchData">
-    function getPageData() {
+    function getPageData(populateData) {
       const siteMainUrl = "https://www.themindsetiq.com";
       const httpFunctionName = "reportpagecontent";
       const searchParams = new URLSearchParams(window.location.search);
@@ -1016,11 +1038,13 @@
             throw new Error(text);
           });
         })
-        .then((data) => {
-          if (!data || data.error) {
+        .then((resultData) => {
+          if (!resultData || resultData.error) {
             root.classList.add("report-not-found");
           } else {
-            populateData(data);
+            data = resultData;
+
+            populateData();
 
             root.classList.add("loaded-data");
           }
@@ -1047,6 +1071,8 @@
     observer.observe(document, { subtree: true, childList: true });
   </script>
 
+  <script src="sample-data.js"></script>
+
   <script id="init">
     addEventListener("load", () => {
       const printButton = document.querySelector("button.print");
@@ -1054,7 +1080,14 @@
         window.print();
       });
 
-      getPageData();
+      //prod
+      // getPageData(populateData);
+
+      //dev
+      data = sampleData;
+      const root = document.querySelector(".report-page-root");
+      populateData();
+      root.classList.add("loaded-data");
     });
   </script>
 </body>
