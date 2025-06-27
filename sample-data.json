@@ -1,0 +1,1519 @@
+{
+  "type": "compartment",
+  "number": 4,
+  "itemId": "abb21ee5-90d0-415f-b621-a11639392613",
+  "itemTitle": "Role",
+  "howToContents": [],
+  "itemReportModules": [],
+  "childrenReportModuleItems": [
+    {
+      "type": "configItem",
+      "number": 4,
+      "itemId": "df21de36-fa37-4214-a36b-d07d46d50bd7",
+      "itemTitle": "Impact scale",
+      "howToContents": [],
+      "itemReportModules": [],
+      "childrenReportModuleItems": [
+        {
+          "type": "configOption",
+          "number": 1,
+          "itemId": "6d9dafb7-5d3c-462a-a765-63bfd7619353",
+          "itemTitle": "Direct Impact",
+          "howToContents": [],
+          "itemReportModules": [],
+          "childrenReportModuleItems": [
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "8bddd0a7-35b2-403c-8c93-6881a5e12c8e",
+              "itemTitle": "Personality",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 40,
+                  "_id": "a5e4e881-3323-401f-9667-261aa796491d",
+                  "multiMindsetSpectrum": {
+                    "weight": 15,
+                    "_id": "8bddd0a7-35b2-403c-8c93-6881a5e12c8e",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-10-01T08:23:35.511Z",
+                    "_updatedDate": "2024-12-18T10:58:43.126Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Personality"
+                  },
+                  "reportText": "The candidate demonstrates a moderate level of friendliness and engagement, reflected in their score of 40-59%. Their communication style is a mix of expressive and reserved, which sometimes limits their ability to fully connect with customers. They maintain a balanced outlook, neither overly optimistic nor pessimistic, which can contribute to steady, if not highly engaging, customer interactions. To further enhance their friendly personality, the candidate should focus on developing a more consistently expressive communication style and fostering a more optimistic approach. Engaging in activities that boost social confidence and positivity can help them become more approachable and engaging. This improvement will enhance their effectiveness in impact roles, ensuring they create more positive and memorable customer experiences.",
+                  "scoreMax": 59,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "Candidate scored 40-59% in personality, showing a mix of expressive and reserved communication with a balanced outlook."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "f5550170-9c4b-480b-a8bb-1d4c3a745292",
+                  "itemTitle": "Expressive vs. Reserved Communication Style (60%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 21,
+                      "itemId": "8bf1d49e-70af-4840-8fde-565a3229bcf4",
+                      "itemTitle": "Expressive vs. Reserved Communication Style",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "621688be-afbb-4c2b-8c09-494bf75ea984",
+                  "itemTitle": "Optimism vs. Pessimism (40%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 23,
+                      "itemId": "fdae67e3-cfc4-46fc-959d-504541cf66f7",
+                      "itemTitle": "Optimism vs. Pessimism",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 20,
+                          "_id": "b3aa0dab-846e-4ae5-88b6-bdabdd839a65",
+                          "mindset": {
+                            "number": 23,
+                            "_id": "fdae67e3-cfc4-46fc-959d-504541cf66f7",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:23:06.357Z",
+                            "_updatedDate": "2024-09-18T13:27:07.358Z",
+                            "title": "Optimism vs. Pessimism"
+                          },
+                          "reportText": "The candidate tends to lean towards a more pessimistic outlook, often focusing on potential obstacles rather than opportunities. While this perspective can provide a realistic assessment of challenges, it may limit their ability to foster motivation and resilience. The inclination to anticipate negative outcomes can affect problem-solving capabilities and reduce persistence when facing setbacks. This mindset might also impact their ability to inspire their team with a positive attitude and drive projects forward with confidence. To enhance their effectiveness, adopting a more balanced view that acknowledges difficulties while emphasizing potential solutions and positive outcomes would be beneficial. This shift can lead to higher morale, improved interpersonal relationships, and a more dynamic and resilient organisational culture.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 20-39% alignment with the Optimistic Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "565cb481-56fe-4827-9365-322844cc0cd4",
+              "itemTitle": "Stress Management",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "043aa711-fc0b-44f3-a18c-96660d97815b",
+                  "multiMindsetSpectrum": {
+                    "weight": 20,
+                    "_id": "565cb481-56fe-4827-9365-322844cc0cd4",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-10-01T08:23:34.920Z",
+                    "_updatedDate": "2024-12-18T11:03:34.598Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Stress Management"
+                  },
+                  "reportText": "The candidate exhibits a strong level of stress management, as reflected in their score of 60-79%. They are typically resilient in high-pressure situations, maintaining composure and effectively managing stress. Their outlook is generally optimistic, which helps them navigate challenges with a positive attitude. To further enhance their stress management abilities, the candidate should continue building on their resilience and optimism. Practices such as regular stress-reduction techniques, maintaining a healthy work-life balance, and fostering positive relationships can support their ongoing development. This focus will ensure they remain calm and productive in fast-paced environments, contributing significantly to their success in impact roles. Their ability to handle stress effectively positions them well to thrive under pressure and maintain high performance.\n",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "Candidate scored 60-79% in stress management, demonstrating strong resilience and a generally optimistic outlook."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "3de6fdb6-af8b-4ce7-b026-2471a9f5a528",
+                  "itemTitle": "Resilient vs. Fragile Mindset (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 4,
+                      "itemId": "95142545-3b44-4933-a917-2711479dcf27",
+                      "itemTitle": "Resilient vs. Fragile Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 60,
+                          "_id": "9f9fd185-9912-403f-88cb-9d9e527030fd",
+                          "mindset": {
+                            "number": 4,
+                            "_id": "95142545-3b44-4933-a917-2711479dcf27",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-11T09:32:21.188Z",
+                            "_updatedDate": "2024-09-11T09:32:33.133Z",
+                            "title": "Resilient vs. Fragile Mindset"
+                          },
+                          "reportText": "The candidate exhibits a strong capacity for resilience, consistently overcoming challenges and adapting well to adversity. They maintain a positive outlook and demonstrate a proactive approach to problem-solving, often bouncing back quickly from failures. Their ability to remain optimistic during tough times and seek continuous growth opportunities is evident, fostering both personal and professional success. While they show considerable resilience, there are occasional instances where their response to setbacks could be more robust. To further enhance their resilient mindset, the candidate should focus on consistently maintaining their proactive and optimistic approach across all situations. By continuing to view setbacks as growth opportunities and embracing challenges with confidence, they can sustain long-term success and stability in various aspects of life, making them a valuable asset in any context.",
+                          "scoreMax": 79,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 60-79% alignment with the Resilient Mindset attribute, showing strong potential."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "621e1c66-1505-4686-a7dd-b42f67c144e5",
+                  "itemTitle": "Optimism vs. Pessimism (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 23,
+                      "itemId": "fdae67e3-cfc4-46fc-959d-504541cf66f7",
+                      "itemTitle": "Optimism vs. Pessimism",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 20,
+                          "_id": "b3aa0dab-846e-4ae5-88b6-bdabdd839a65",
+                          "mindset": {
+                            "number": 23,
+                            "_id": "fdae67e3-cfc4-46fc-959d-504541cf66f7",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:23:06.357Z",
+                            "_updatedDate": "2024-09-18T13:27:07.358Z",
+                            "title": "Optimism vs. Pessimism"
+                          },
+                          "reportText": "The candidate tends to lean towards a more pessimistic outlook, often focusing on potential obstacles rather than opportunities. While this perspective can provide a realistic assessment of challenges, it may limit their ability to foster motivation and resilience. The inclination to anticipate negative outcomes can affect problem-solving capabilities and reduce persistence when facing setbacks. This mindset might also impact their ability to inspire their team with a positive attitude and drive projects forward with confidence. To enhance their effectiveness, adopting a more balanced view that acknowledges difficulties while emphasizing potential solutions and positive outcomes would be beneficial. This shift can lead to higher morale, improved interpersonal relationships, and a more dynamic and resilient organisational culture.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 20-39% alignment with the Optimistic Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "c7ec4eb1-e99c-4eb8-baae-a63ac0c9f210",
+              "itemTitle": "Efficiency",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 80,
+                  "_id": "1c72301d-586f-4e4d-8ebc-dc23276c527a",
+                  "multiMindsetSpectrum": {
+                    "weight": 20,
+                    "_id": "c7ec4eb1-e99c-4eb8-baae-a63ac0c9f210",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-10-01T08:23:34.381Z",
+                    "_updatedDate": "2024-12-18T10:57:42.293Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Efficiency"
+                  },
+                  "reportText": "The candidate showcases exceptional efficiency, as indicated by their score of 80-100%. They consistently perform tasks quickly and accurately, maximising productivity without compromising on quality. Their approach is strongly efficiency-focused, ensuring that resources are utilized optimally and effectively. Additionally, they exhibit a highly solution-oriented mindset, proactively addressing challenges and finding practical solutions. This combination of efficiency and problem-solving skills makes them a significant asset in impact roles. To maintain and further enhance their performance, the candidate should continue to prioritise efficiency and solutions-focused thinking. Their outstanding ability to balance speed, accuracy, and quality ensures they deliver high-value results consistently, contributing greatly to team success and overall productivity.",
+                  "scoreMax": 100,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "Candidate scored 80-100% in efficiency, demonstrating exceptional focus on efficiency and a highly solution-oriented mindset."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "97acc805-a6e6-4f73-8e9d-708a5d334cbd",
+                  "itemTitle": "Solution-Oriented vs. Problem-Oriented (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 27,
+                      "itemId": "6ee4fb20-6214-498b-a8bf-edfdb2e59c0d",
+                      "itemTitle": "Solution-Oriented vs. Problem-Oriented",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "070b724e-d1f8-4f8a-99a7-d9d9574cbf03",
+                  "itemTitle": "Efficiency-Focused vs. Extravagant (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 20,
+                      "itemId": "4da83ff8-a795-44b3-9953-d4ccc5a5457d",
+                      "itemTitle": "Efficiency-Focused vs. Extravagant",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "39346cf2-4177-480e-b6fd-ce318947c570",
+              "itemTitle": "Alertness",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "9a403dca-6716-4b45-81f7-5e9b17a199aa",
+                  "multiMindsetSpectrum": {
+                    "weight": 20,
+                    "_id": "39346cf2-4177-480e-b6fd-ce318947c570",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-10-01T08:23:33.825Z",
+                    "_updatedDate": "2024-12-18T10:55:19.794Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Alertness"
+                  },
+                  "reportText": "The candidate shows a strong level of alertness, reflected in their score of 60-79%. They are generally proactive in anticipating customer needs and environmental changes, ensuring a responsive and attentive service. Their attention to detail is solid, allowing them to notice and address issues promptly, which enhances the overall customer experience. To further improve their alertness, the candidate should continue focusing on proactive strategies and maintaining their keen attention to detail. By consistently anticipating customer needs and staying observant, they can ensure a high ",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "Candidate scored 60-79% in alertness, demonstrating a predominantly proactive mindset and strong attention to detail."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "6dc10b7a-ff4f-4ecc-a8f7-97a0b372bc97",
+                  "itemTitle": "Proactive vs. Reactive Mindset (60%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 25,
+                      "itemId": "69ea9631-d33a-4bee-a8e1-3317d6754ad6",
+                      "itemTitle": "Proactive vs. Reactive Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 40,
+                          "_id": "4978d266-7848-4fc4-bca5-6b16ac2b09a5",
+                          "mindset": {
+                            "number": 25,
+                            "_id": "69ea9631-d33a-4bee-a8e1-3317d6754ad6",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-11T09:32:56.415Z",
+                            "_updatedDate": "2024-09-11T09:33:02.715Z",
+                            "title": "Proactive vs. Reactive Mindset"
+                          },
+                          "reportText": "The candidate exhibits a moderate level of proactivity, often taking control of situations and initiating change, but not consistently. They occasionally demonstrate strategic thinking and forward planning, enabling them to stay ahead of some challenges and seize certain opportunities. However, there are still instances where their approach remains reactive, responding to events after they occur. This inconsistency can lead to missed opportunities for innovation and progress. To enhance their proactive mindset, the candidate should focus on regularly setting clear goals, planning ahead, and taking initiative more consistently. By doing so, they can improve their efficiency, anticipate potential issues before they escalate, and contribute to a more dynamic and resilient environment. Strengthening these proactive habits will enable the candidate to drive long-term success and stay ahead of challenges in both personal and professional contexts.",
+                          "scoreMax": 59,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 40-59% alignment with the Proactive Mindset attribute, showing moderate potential."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "f2d06e7c-aa53-430a-adf0-767ad082a103",
+                  "itemTitle": "Detail-Oriented vs. Inattentive (40%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 6,
+                      "itemId": "d9514fa9-e625-47e3-bfba-8a67d4302de8",
+                      "itemTitle": "Detail-Oriented vs. Inattentive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "27dc8833-a862-484d-9834-9db19c95d69d",
+              "itemTitle": "Customer Orientation",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "3ca99e7e-ce79-4da8-a6f3-072a78e771eb",
+                  "multiMindsetSpectrum": {
+                    "weight": 25,
+                    "_id": "27dc8833-a862-484d-9834-9db19c95d69d",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-10-01T08:23:33.212Z",
+                    "_updatedDate": "2024-12-18T10:57:15.664Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Customer Orientation"
+                  },
+                  "reportText": "The candidate exhibits a strong level of customer orientation, reflected in their score of 60-79%. They show a clear commitment to serving customer needs, consistently prioritising customer satisfaction in their interactions. Their empathetic approach allows them to effectively understand and address customer concerns, leading to positive and effective interactions. However, there is still room for growth to achieve the highest level of customer orientation. To further enhance their abilities, the candidate should continue to deepen their service-oriented mindset and empathy. By fully embracing these qualities, they can ensure that every customer interaction is both positive and impactful, significantly contributing to customer satisfaction and loyalty. This focus is crucial for their success in impact roles.",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "Candidate scored 60-79% in customer orientation, demonstrating a strong service focus and considerable empathy."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "4c249ae1-4bae-4069-aef9-ec559540607d",
+                  "itemTitle": "Service vs. Self-Serving Mindset (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 13,
+                      "itemId": "42e87869-783b-44fc-a211-fb6f32024d35",
+                      "itemTitle": "Service vs. Self-Serving Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "fe72693c-b5ea-4760-9af8-7eb5f41285a0",
+                  "itemTitle": "Empathetic vs. Insensitive (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 11,
+                      "itemId": "2040c058-d93d-464f-af4c-3b3bc2f869e9",
+                      "itemTitle": "Empathetic vs. Insensitive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "configItem",
+      "number": 3,
+      "itemId": "6492e130-b191-4f24-992e-b08c838d279a",
+      "itemTitle": "Interaction level",
+      "howToContents": [],
+      "itemReportModules": [],
+      "childrenReportModuleItems": [
+        {
+          "type": "configOption",
+          "number": 2,
+          "itemId": "04f39dcf-0703-4953-a1cd-433ccbff786f",
+          "itemTitle": "Internal Collaboration",
+          "howToContents": [],
+          "itemReportModules": [],
+          "childrenReportModuleItems": [
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "4ec163fe-3fdc-49ec-8f92-cd2cb4d56ab1",
+              "itemTitle": "Reliability",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "dacd9923-fa58-4450-929a-6ba9afca4f3d",
+                  "itemTitle": "Accountable vs. Irresponsible (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 1,
+                      "itemId": "ca2552d9-dac4-4660-81e3-2949f630ac8b",
+                      "itemTitle": "Accountable vs. Irresponsible",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 20,
+                          "_id": "2550324c-b06b-4896-b8fe-11e8e454b4ed",
+                          "mindset": {
+                            "number": 1,
+                            "_id": "ca2552d9-dac4-4660-81e3-2949f630ac8b",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-05T08:22:56.884Z",
+                            "_updatedDate": "2024-09-06T12:53:49.675Z",
+                            "title": "Accountable vs. Irresponsible"
+                          },
+                          "reportText": "The candidate exhibits limited alignment with an Accountable Mindset, showing occasional reluctance to take full responsibility for actions and outcomes. This sporadic accountability can lead to inconsistencies in task completion, with standards sometimes not being met. Issues may be addressed but not always promptly, affecting the overall reliability and performance within the team. In practice, this mindset can create challenges in building a culture of trust and continuous improvement. The candidate may sometimes shift blame, hindering proactive problem-solving and the development of a supportive and dependable team environment. While there are moments of accountability, the overall inconsistency can impact the team's ability to achieve sustained success and maintain high performance standards.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 20-39% alignment with the Accountable Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "40f0a4e0-4b56-4771-8495-d7c9ba275928",
+                  "itemTitle": "Resilient vs. Fragile (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 4,
+                      "itemId": "95142545-3b44-4933-a917-2711479dcf27",
+                      "itemTitle": "Resilient vs. Fragile Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 60,
+                          "_id": "9f9fd185-9912-403f-88cb-9d9e527030fd",
+                          "mindset": {
+                            "number": 4,
+                            "_id": "95142545-3b44-4933-a917-2711479dcf27",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-11T09:32:21.188Z",
+                            "_updatedDate": "2024-09-11T09:32:33.133Z",
+                            "title": "Resilient vs. Fragile Mindset"
+                          },
+                          "reportText": "The candidate exhibits a strong capacity for resilience, consistently overcoming challenges and adapting well to adversity. They maintain a positive outlook and demonstrate a proactive approach to problem-solving, often bouncing back quickly from failures. Their ability to remain optimistic during tough times and seek continuous growth opportunities is evident, fostering both personal and professional success. While they show considerable resilience, there are occasional instances where their response to setbacks could be more robust. To further enhance their resilient mindset, the candidate should focus on consistently maintaining their proactive and optimistic approach across all situations. By continuing to view setbacks as growth opportunities and embracing challenges with confidence, they can sustain long-term success and stability in various aspects of life, making them a valuable asset in any context.",
+                          "scoreMax": 79,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 60-79% alignment with the Resilient Mindset attribute, showing strong potential."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "9940199f-7bb6-477a-9202-3f682d1b7280",
+              "itemTitle": "Conflict Resolution",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "3cc70ba0-ffe1-486a-ae2f-259e38f4f9c9",
+                  "itemTitle": "Empathetic vs. Insensitive (60%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 11,
+                      "itemId": "2040c058-d93d-464f-af4c-3b3bc2f869e9",
+                      "itemTitle": "Empathetic vs. Insensitive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "e5a8a3bf-04af-4032-bffa-d01b102091b7",
+                  "itemTitle": "Solution-Oriented vs. Problem-Oriented (40%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 27,
+                      "itemId": "6ee4fb20-6214-498b-a8bf-edfdb2e59c0d",
+                      "itemTitle": "Solution-Oriented vs. Problem-Oriented",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "3bc33a20-84d3-4b69-9494-a7c734af1e6e",
+              "itemTitle": "Leadership",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "8b01f0e3-aa94-4503-bfcf-691112f10b78",
+                  "itemTitle": "Leadership vs. Follower Mindset (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 28,
+                      "itemId": "3523b3ca-b518-44a0-bb52-bcd44bd120f5",
+                      "itemTitle": "Leadership vs. Follower Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "e1dd29c9-e2f3-4747-986b-191bc9c865ed",
+                  "itemTitle": "Ethical vs. Expedient Mindset (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 2,
+                      "itemId": "9fd6e410-ea8f-4f91-a72a-e6f3911780c9",
+                      "itemTitle": "Ethical vs. Expedient Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 19,
+                          "_id": "34205780-4f96-4f43-889d-55935c4e915a",
+                          "mindset": {
+                            "number": 2,
+                            "_id": "9fd6e410-ea8f-4f91-a72a-e6f3911780c9",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-05T08:23:45.332Z",
+                            "_updatedDate": "2024-09-06T12:53:51.078Z",
+                            "title": "Ethical vs. Expedient Mindset"
+                          },
+                          "reportText": "This candidate appears to navigate decisions with a pragmatic lens, often weighing what works fastest or feels most efficient. While they may not deliberately act against core values, their choices can sometimes reflect a tendency to seek the path of least resistance, especially when under pressure or when ethical boundaries seem ambiguous. This approach can be effective in environments where speed and adaptability are prized, but it may fall short in roles that demand unwavering integrity or long-term trust. The individual might benefit from greater clarity around organisational values or structured guidance when facing grey-area dilemmas. Though not entirely misaligned, their moral compass may fluctuate based on external incentives or convenience, suggesting room for growth. With support and reinforcement of core principles, they could shift toward more consistent, value-based decisions that serve both immediate needs and broader, lasting outcomes.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "Score: 20–39% – The candidate shows limited commitment to ethical consistency, occasionally prioritising convenience over principled decision-making.\n"
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "27960f03-4289-4748-aa84-46ae5d7c1b3f",
+              "itemTitle": "Communication",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "137cb1a8-27dd-47ac-a67f-1247554c085e",
+                  "itemTitle": "Clear vs. Ambiguous (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 5,
+                      "itemId": "e18fb7ea-8d62-45b1-af92-5cb243f0b907",
+                      "itemTitle": "Clear vs. Ambiguous",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "2c8231cc-ea38-42af-8a4d-8e0ed6521696",
+                  "itemTitle": "Expressive vs. Reserved Communication Style (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 21,
+                      "itemId": "8bf1d49e-70af-4840-8fde-565a3229bcf4",
+                      "itemTitle": "Expressive vs. Reserved Communication Style",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "b7f3afd2-9004-4a49-bebe-5426aba75d65",
+              "itemTitle": "Teamwork",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "2517ec1e-948a-4551-b3d3-09fc35064700",
+                  "itemTitle": "Collaborative vs. Egocentric (50%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 7,
+                      "itemId": "64ea22cd-e8b7-4b1a-8419-21b6ac6c857b",
+                      "itemTitle": "Collaborative vs. Egocentric",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 40,
+                          "_id": "29f753ab-8264-4b12-b683-1e59e530230d",
+                          "mindset": {
+                            "number": 7,
+                            "_id": "64ea22cd-e8b7-4b1a-8419-21b6ac6c857b",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:21:48.646Z",
+                            "_updatedDate": "2024-09-18T13:24:02.247Z",
+                            "title": "Collaborative vs. Egocentric"
+                          },
+                          "reportText": "The candidate shows a moderate alignment with a Collaborative Mindset, indicating a balanced approach between teamwork and individual achievement. While there is an appreciation for collective success and some effort to seek input from colleagues, it is not consistently prioritised. The candidate may occasionally share credit for successes and participate in team activities, but there is room for improvement in fully embracing collaborative efforts. This balance can lead to periods of effective teamwork, but also moments where individual goals take precedence, potentially causing friction within the team. To enhance alignment, the candidate could benefit from more actively engaging in group discussions, valuing diverse perspectives, and consistently working towards shared goals. Strengthening these collaborative practices can lead to better decision-making, higher morale, and a more supportive and innovative organisational culture.",
+                          "scoreMax": 59,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 40-59% alignment with the Collaborative Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "08417f35-8bca-449e-9b83-14103e10cd15",
+                  "itemTitle": "Team-Oriented vs. Individualistic (50%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 8,
+                      "itemId": "fc3bfb54-83d4-4af8-9a11-25da0fbdaa4e",
+                      "itemTitle": "Team-Oriented vs. Individualistic",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "configItem",
+      "number": 2,
+      "itemId": "1533bd4b-1b94-4e01-829b-46fcf443118e",
+      "itemTitle": "Skill",
+      "howToContents": [],
+      "itemReportModules": [],
+      "childrenReportModuleItems": [
+        {
+          "type": "configOption",
+          "number": 1,
+          "itemId": "61a9d257-6192-4e05-a6b5-748bd92b248e",
+          "itemTitle": "Technical Skills",
+          "howToContents": [],
+          "itemReportModules": [],
+          "childrenReportModuleItems": [
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "9c692691-4ed5-486e-a767-3fa716e569fa",
+              "itemTitle": "Problem-Solving",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "13db5e27-e222-4c02-b237-557b66211c00",
+                  "itemTitle": "Solution-Oriented vs. Problem-Oriented (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 27,
+                      "itemId": "6ee4fb20-6214-498b-a8bf-edfdb2e59c0d",
+                      "itemTitle": "Solution-Oriented vs. Problem-Oriented",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "4c5d851c-f4cc-4446-9255-6f681ac81664",
+                  "itemTitle": "Analytical vs. Indecisive Decision-Making (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 18,
+                      "itemId": "3d88781d-44e7-4cc3-9535-9017412d4d9b",
+                      "itemTitle": "Analytical vs. Indecisive Decision-Making",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 20,
+                          "_id": "9b890664-210c-48f1-9e2b-9de9ea373ad4",
+                          "mindset": {
+                            "number": 18,
+                            "_id": "3d88781d-44e7-4cc3-9535-9017412d4d9b",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:22:36.869Z",
+                            "_updatedDate": "2024-09-18T13:26:13.930Z",
+                            "title": "Analytical vs. Indecisive Decision-Making"
+                          },
+                          "reportText": "The candidate shows a low alignment with an Analytical Mindset, indicating some difficulty in applying systematic, logical reasoning to decision-making. While there are instances of analytical thinking, these are not consistent enough to drive effective problem-solving and strategic planning. The candidate may struggle to thoroughly assess situations and often relies on intuition or incomplete information, leading to suboptimal decisions. This can result in delays and missed opportunities, as the lack of decisive action hampers progress. Despite occasional use of data and critical thinking, the candidate's overall ability to evaluate options and develop effective solutions is limited. Consequently, their contribution to reducing risks and improving organisational agility is modest. To enhance their impact, fostering a more consistent and data-driven approach to decision-making is essential.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 20-39% alignment with the Analytical Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "faf1286b-4994-477f-aa22-8aebecfc12d0",
+              "itemTitle": "Continuous Learning",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "1da4d27d-bfc4-4509-9580-b3c8188074f9",
+                  "itemTitle": "Curiosity Mindset vs. Complacency Mindset (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 19,
+                      "itemId": "2b94d86a-50ce-4c36-b8fd-a99a50310b4e",
+                      "itemTitle": "Curiosity Mindset vs. Complacency Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "d933eafc-13da-4126-9c85-6b066541bd59",
+                  "itemTitle": "Learning vs. Fixedness (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 15,
+                      "itemId": "42cd4449-c64e-4eaf-8757-b8df72d7b933",
+                      "itemTitle": "Learning vs. Fixedness",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 40,
+                          "_id": "15aa0145-e145-4562-a08e-4e44d8c30840",
+                          "mindset": {
+                            "number": 15,
+                            "_id": "42cd4449-c64e-4eaf-8757-b8df72d7b933",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:22:32.631Z",
+                            "_updatedDate": "2024-09-18T13:25:46.799Z",
+                            "title": "Learning vs. Fixedness"
+                          },
+                          "reportText": "The candidate shows a moderate alignment with a learning mindset, indicating a balanced approach between seeking new knowledge and relying on established methods. While there is a reasonable openness to growth and adaptability, there remains a notable tendency to stick to existing beliefs. This middle ground suggests that the candidate occasionally pursues new skills and welcomes feedback but may not consistently prioritise continuous improvement and innovation. To enhance overall performance, creativity, and the ability to navigate complex environments effectively, fostering a stronger learning mindset is recommended. Encouraging this candidate to more regularly seek out new opportunities for growth and embrace change can lead to significant personal and professional development, benefiting both the individual and the organisation.",
+                          "scoreMax": 59,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 40-59% alignment with the Learning Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "507aa19e-eaa5-4236-9c2d-45ca701a40e8",
+              "itemTitle": "Innovativeness",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "1da4d27d-bfc4-4509-9580-b3c8188074f9",
+                  "itemTitle": "Curiosity Mindset vs. Complacency Mindset (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 19,
+                      "itemId": "2b94d86a-50ce-4c36-b8fd-a99a50310b4e",
+                      "itemTitle": "Curiosity Mindset vs. Complacency Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "bd343fa4-ac31-4b50-a2d5-801e704d7ea9",
+                  "itemTitle": "Innovative vs. Conventional Thinking (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 22,
+                      "itemId": "bda5f608-be48-4380-a705-afaf7a0c1309",
+                      "itemTitle": "Innovative vs. Conventional Thinking",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "1f16e5d7-0161-4661-9cc5-6ba03d4fd1ad",
+              "itemTitle": "Precision",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "f2c567d2-7b48-4088-b15b-22e92c8ac305",
+                  "itemTitle": "Detail-Oriented vs. Inattentive (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 6,
+                      "itemId": "d9514fa9-e625-47e3-bfba-8a67d4302de8",
+                      "itemTitle": "Detail-Oriented vs. Inattentive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "f0d526f3-8cf1-47de-9cc6-9c2bd6a27e03",
+                  "itemTitle": "Deliberate vs. Hasty (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 10,
+                      "itemId": "b62b6d66-d689-4fb0-b940-3b8300c94aeb",
+                      "itemTitle": "Deliberate vs. Hasty",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "d6a842ef-51df-4466-b6a8-90ff2a1ab5ad",
+              "itemTitle": "Expertise",
+              "howToContents": [],
+              "itemReportModules": [],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "789ca4b9-afcd-47d5-8722-884de59ff52f",
+                  "itemTitle": "Detail-Oriented vs. Inattentive (60%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 6,
+                      "itemId": "d9514fa9-e625-47e3-bfba-8a67d4302de8",
+                      "itemTitle": "Detail-Oriented vs. Inattentive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "ae96d2db-9377-4e7a-8657-158702b61aa8",
+                  "itemTitle": "Learning vs. Fixedness (40%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 15,
+                      "itemId": "42cd4449-c64e-4eaf-8757-b8df72d7b933",
+                      "itemTitle": "Learning vs. Fixedness",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 40,
+                          "_id": "15aa0145-e145-4562-a08e-4e44d8c30840",
+                          "mindset": {
+                            "number": 15,
+                            "_id": "42cd4449-c64e-4eaf-8757-b8df72d7b933",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:22:32.631Z",
+                            "_updatedDate": "2024-09-18T13:25:46.799Z",
+                            "title": "Learning vs. Fixedness"
+                          },
+                          "reportText": "The candidate shows a moderate alignment with a learning mindset, indicating a balanced approach between seeking new knowledge and relying on established methods. While there is a reasonable openness to growth and adaptability, there remains a notable tendency to stick to existing beliefs. This middle ground suggests that the candidate occasionally pursues new skills and welcomes feedback but may not consistently prioritise continuous improvement and innovation. To enhance overall performance, creativity, and the ability to navigate complex environments effectively, fostering a stronger learning mindset is recommended. Encouraging this candidate to more regularly seek out new opportunities for growth and embrace change can lead to significant personal and professional development, benefiting both the individual and the organisation.",
+                          "scoreMax": 59,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 40-59% alignment with the Learning Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "configItem",
+      "number": 1,
+      "itemId": "c055a2ae-e894-45b1-9cbc-7360d88ed42d",
+      "itemTitle": "Type",
+      "howToContents": [],
+      "itemReportModules": [],
+      "childrenReportModuleItems": [
+        {
+          "type": "configOption",
+          "number": 1,
+          "itemId": "e75599b8-b14e-4655-acb2-39517b4d261f",
+          "itemTitle": "Operational Roles",
+          "howToContents": [],
+          "itemReportModules": [],
+          "childrenReportModuleItems": [
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "4c858522-f654-4721-9092-d4e7b83691a7",
+              "itemTitle": "Leadership",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "866abbfc-d762-477a-bfb9-5e4bda62df83",
+                  "multiMindsetSpectrum": {
+                    "weight": 10,
+                    "_id": "4c858522-f654-4721-9092-d4e7b83691a7",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-09-27T11:33:40.393Z",
+                    "_updatedDate": "2024-12-18T10:58:10.997Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Leadership"
+                  },
+                  "reportText": "A score of 60-79% reflects that the candidate demonstrates significant alignment with the leadership requirements essential for supervisory operational roles. This score indicates that the candidate frequently steps up to lead, effectively inspiring and guiding their team members towards achieving common goals. Their ability to take initiative and maintain a steady leadership presence is evident, showcasing their potential to excel in supervisory positions.\n\nThe candidate exhibits a considerable level of empathy, which enhances their ability to connect with team members, understand their needs, and provide support. This empathetic approach fosters a positive work environment, promoting collaboration and team cohesion. The candidate’s empathy allows them to address team concerns thoughtfully and build strong interpersonal relationships within the team.\n\nFor supervisory roles, it is crucial to have both a strong leadership presence and a high level of empathy to effectively inspire and guide teams. The candidate’s score indicates they possess these qualities, often leading by example and showing a genuine concern for their team’s well-being. Their alignment with the required leadership and empathetic mindsets is strong, suggesting they are well-equipped to handle supervisory responsibilities and drive their team towards success.\n\nIn summary, the candidate demonstrates robust leadership abilities and empathy, indicating they can effectively perform supervisory duties. Their alignment with the leadership and empathetic mindsets is strong, positioning them as a reliable and inspiring leader capable of guiding their team to achieve operational excellence.\n\n",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "A score of 60-79% indicates the candidate has strong leadership abilities, often inspiring and guiding others effectively, with a good degree of empathy.\n"
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "fe72693c-b5ea-4760-9af8-7eb5f41285a0",
+                  "itemTitle": "Empathetic vs. Insensitive (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 11,
+                      "itemId": "2040c058-d93d-464f-af4c-3b3bc2f869e9",
+                      "itemTitle": "Empathetic vs. Insensitive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "8b01f0e3-aa94-4503-bfcf-691112f10b78",
+                  "itemTitle": "Leadership vs. Follower Mindset (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 28,
+                      "itemId": "3523b3ca-b518-44a0-bb52-bcd44bd120f5",
+                      "itemTitle": "Leadership vs. Follower Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "7f367c09-d223-4ec9-a8b5-c685368647c7",
+              "itemTitle": "Adaptability",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "586cac28-bd9b-42c1-9cff-76d031ed04c0",
+                  "multiMindsetSpectrum": {
+                    "weight": 15,
+                    "_id": "7f367c09-d223-4ec9-a8b5-c685368647c7",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-09-27T11:32:20.196Z",
+                    "_updatedDate": "2024-12-18T10:54:54.117Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Adaptability"
+                  },
+                  "reportText": "A score of 60-79% signifies a strong alignment with the adaptability requirements for this operational role. The candidate shows a commendable ability to handle unexpected challenges and adjust to changing environments. They exhibit a predominantly adaptive mindset, indicating a willingness and capability to modify their approach and strategies as situations evolve. This adaptability is complemented by a robust growth mindset, which underscores their openness to learning, embracing new ideas, and continuously seeking improvement.\nThe candidate's capacity to remain flexible and responsive to change makes them well-suited for dynamic operational settings where adaptability is crucial. Their ability to pivot and innovate in response to shifting demands and unforeseen obstacles is a significant asset, enhancing their potential to drive operational efficiency and success. Encouraging this candidate to maintain and further develop their adaptive and growth-oriented qualities will likely result in continued excellence and leadership in managing operational challenges.\nThe candidate's high level of adaptability positions them as a valuable asset in roles that require resilience, flexibility, and a forward-thinking approach to operational management.\n\n\n",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "A score of 60-79% indicates the candidate demonstrates a high level of adaptability, effectively managing unexpected challenges and changes with a growth-oriented mindset.\n"
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "9369b645-bd3d-4404-a8e0-fd3094a577e1",
+                  "itemTitle": "Adaptive vs. Rigid Mindset (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 3,
+                      "itemId": "c5bcdc93-3e63-4b58-ae33-250ea26d8299",
+                      "itemTitle": "Adaptive vs. Rigid Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 60,
+                          "_id": "b915fb58-8f43-4446-9b16-ed2cbc11f662",
+                          "mindset": {
+                            "number": 3,
+                            "_id": "c5bcdc93-3e63-4b58-ae33-250ea26d8299",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:20:36.852Z",
+                            "_updatedDate": "2024-09-18T13:20:52.453Z",
+                            "title": "Adaptive vs. Rigid Mindset"
+                          },
+                          "reportText": "The candidate shows a strong capacity for adaptability, effectively embracing change and adjusting to new situations with relative ease. They display a commendable ability to pivot strategies in response to market shifts and are open to adopting new technologies. Their approach to problem-solving includes a willingness to embrace diverse perspectives, which supports their capability to stay relevant and competitive in various professional domains. This level of adaptability indicates that they are well-equipped to navigate the ever-evolving personal and professional landscapes, promoting innovation and continuous improvement. However, there is still potential for further growth. By increasing their openness to change and further developing their flexibility, the candidate can enhance their ability to respond effectively to unforeseen challenges and opportunities. Overall, their current mindset fosters a proactive approach, enabling them to maintain momentum and achieve sustained success.",
+                          "scoreMax": 79,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 60-79% alignment with the Adaptive Mindset attribute, showing good adaptability."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "9a19561e-fb92-418f-94ad-97ec1e073e1d",
+                  "itemTitle": "Growth Mindset vs. Fixed Mindset (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 14,
+                      "itemId": "77caf746-de23-474c-b1fb-559588552c7b",
+                      "itemTitle": "Growth Mindset vs. Fixed Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 40,
+                          "_id": "36bb1f13-3210-444e-bb36-2ceae6b45f2d",
+                          "mindset": {
+                            "number": 14,
+                            "_id": "77caf746-de23-474c-b1fb-559588552c7b",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-11T09:25:13.816Z",
+                            "_updatedDate": "2024-09-11T09:25:44.819Z",
+                            "title": "Growth Mindset vs. Fixed Mindset"
+                          },
+                          "reportText": "The candidate exhibits a moderate level of growth mindset, embracing challenges and viewing failures as opportunities for growth in some situations. Their resilience and commitment to continuous improvement are evident, though they may still struggle with maintaining this mindset consistently. The candidate frequently seeks feedback and shows an interest in learning new skills, indicating a developing love for learning. However, their persistence in the face of setbacks can be inconsistent, which sometimes hinders sustained progress and achievement. To further strengthen their growth mindset, the candidate should focus on consistently embracing challenges, actively seeking feedback, and persisting through setbacks. By cultivating these habits more regularly, they can enhance their resilience, drive continuous improvement, and achieve greater success in both personal and professional contexts, fostering a culture of adaptability, innovation, and growth.",
+                          "scoreMax": 59,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 40-59% alignment with the Growth Mindset attribute, showing moderate potential."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "a2ed9df7-0c29-4d38-ad48-d0e9ee5c3584",
+              "itemTitle": "Attention to Detail",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "f13a4609-15de-4036-b93d-a55ff04d75f6",
+                  "multiMindsetSpectrum": {
+                    "weight": 20,
+                    "_id": "a2ed9df7-0c29-4d38-ad48-d0e9ee5c3584",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-09-27T11:30:41.253Z",
+                    "_updatedDate": "2024-12-18T10:55:30.151Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Attention to Detail"
+                  },
+                  "reportText": "A score of 60-79% reflects a solid alignment with the attention to detail required for this operational role. The candidate consistently manages tasks with a high degree of precision and is adept at detecting small issues before they escalate into larger problems. Their approach is predominantly detail-oriented, ensuring that most tasks are handled meticulously. They also demonstrate good analytical decision-making skills, contributing to their ability to address issues effectively and efficiently. While there is still room for improvement to reach the highest level of meticulousness, their current performance is commendable. Enhancing their attention to the finer details and further refining their decision-making processes will maximize their potential and ensure exceptional operational efficiency.\n",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "A score of 60-79% indicates the candidate shows a strong ability to manage tasks with precision and detect small issues, demonstrating reliable attention to detail."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "4f86ca3b-08de-4227-9da4-84ee25ecff1d",
+                  "itemTitle": "Detail-Oriented vs. Inattentive (80%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 6,
+                      "itemId": "d9514fa9-e625-47e3-bfba-8a67d4302de8",
+                      "itemTitle": "Detail-Oriented vs. Inattentive",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "a2a8a42f-8d45-404e-8661-8865829ba182",
+                  "itemTitle": "Analytical vs. Indecisive Decision-Making (20%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 18,
+                      "itemId": "3d88781d-44e7-4cc3-9535-9017412d4d9b",
+                      "itemTitle": "Analytical vs. Indecisive Decision-Making",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 20,
+                          "_id": "9b890664-210c-48f1-9e2b-9de9ea373ad4",
+                          "mindset": {
+                            "number": 18,
+                            "_id": "3d88781d-44e7-4cc3-9535-9017412d4d9b",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-18T13:22:36.869Z",
+                            "_updatedDate": "2024-09-18T13:26:13.930Z",
+                            "title": "Analytical vs. Indecisive Decision-Making"
+                          },
+                          "reportText": "The candidate shows a low alignment with an Analytical Mindset, indicating some difficulty in applying systematic, logical reasoning to decision-making. While there are instances of analytical thinking, these are not consistent enough to drive effective problem-solving and strategic planning. The candidate may struggle to thoroughly assess situations and often relies on intuition or incomplete information, leading to suboptimal decisions. This can result in delays and missed opportunities, as the lack of decisive action hampers progress. Despite occasional use of data and critical thinking, the candidate's overall ability to evaluate options and develop effective solutions is limited. Consequently, their contribution to reducing risks and improving organisational agility is modest. To enhance their impact, fostering a more consistent and data-driven approach to decision-making is essential.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 20-39% alignment with the Analytical Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "901fef7a-106f-4a2f-aed9-b88872143a8d",
+              "itemTitle": "Efficiency",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 60,
+                  "_id": "389fe31a-54cd-47c6-afce-f29fc89e5ea7",
+                  "multiMindsetSpectrum": {
+                    "weight": 25,
+                    "_id": "901fef7a-106f-4a2f-aed9-b88872143a8d",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-09-27T11:28:56.920Z",
+                    "_updatedDate": "2024-12-18T10:57:46.097Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Efficiency"
+                  },
+                  "reportText": "A score of 60-79% reflects a strong alignment with the efficiency-focused operational role, showcasing the candidate's ability to optimize processes and resources effectively. The candidate demonstrates a significant efficiency-focused mindset, consistently prioritizing streamlined operations and cost-effective solutions over extravagance. Their proactive approach is evident in their ability to anticipate and prevent potential issues, ensuring smooth and uninterrupted workflow. This proactive mindset complements their efficiency focus, enabling them to achieve daily targets effectively and reliably. While there is still some room for growth to reach the highest level of alignment, the candidate's current performance indicates a solid foundation in efficiency and proactivity. With continued development and refinement of their skills, they have the potential to excel even further in optimizing operational processes and contributing to the organization's success.\n",
+                  "scoreMax": 79,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "A score of 60-79% indicates the candidate demonstrates strong efficiency and a predominantly proactive approach, effectively optimizing processes and resources to achieve daily targets.\n"
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "939d8745-3d01-4994-bd4c-bb8066458386",
+                  "itemTitle": "Efficiency-Focused vs. Extravagant (60%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 20,
+                      "itemId": "4da83ff8-a795-44b3-9953-d4ccc5a5457d",
+                      "itemTitle": "Efficiency-Focused vs. Extravagant",
+                      "howToContents": [],
+                      "itemReportModules": [],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "83d5b537-0b32-4090-b2e6-f5859e2b5122",
+                  "itemTitle": "Proactive vs. Reactive Mindset (40%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 25,
+                      "itemId": "69ea9631-d33a-4bee-a8e1-3317d6754ad6",
+                      "itemTitle": "Proactive vs. Reactive Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 40,
+                          "_id": "4978d266-7848-4fc4-bca5-6b16ac2b09a5",
+                          "mindset": {
+                            "number": 25,
+                            "_id": "69ea9631-d33a-4bee-a8e1-3317d6754ad6",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-11T09:32:56.415Z",
+                            "_updatedDate": "2024-09-11T09:33:02.715Z",
+                            "title": "Proactive vs. Reactive Mindset"
+                          },
+                          "reportText": "The candidate exhibits a moderate level of proactivity, often taking control of situations and initiating change, but not consistently. They occasionally demonstrate strategic thinking and forward planning, enabling them to stay ahead of some challenges and seize certain opportunities. However, there are still instances where their approach remains reactive, responding to events after they occur. This inconsistency can lead to missed opportunities for innovation and progress. To enhance their proactive mindset, the candidate should focus on regularly setting clear goals, planning ahead, and taking initiative more consistently. By doing so, they can improve their efficiency, anticipate potential issues before they escalate, and contribute to a more dynamic and resilient environment. Strengthening these proactive habits will enable the candidate to drive long-term success and stay ahead of challenges in both personal and professional contexts.",
+                          "scoreMax": 59,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 40-59% alignment with the Proactive Mindset attribute, showing moderate potential."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "multiMindsetSpectrum",
+              "number": 0,
+              "itemId": "1d94eb9d-3417-497d-92e5-ef13f6d6f246",
+              "itemTitle": "Reliability",
+              "howToContents": [],
+              "itemReportModules": [
+                {
+                  "scoreMin": 40,
+                  "_id": "073619c5-8197-4d77-b6b6-93026b94395d",
+                  "multiMindsetSpectrum": {
+                    "weight": 30,
+                    "_id": "1d94eb9d-3417-497d-92e5-ef13f6d6f246",
+                    "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                    "_createdDate": "2024-09-27T11:27:18.248Z",
+                    "_updatedDate": "2024-12-18T11:02:49.600Z",
+                    "_publishStatus": "PUBLISHED",
+                    "title": "Reliability"
+                  },
+                  "reportText": "A score of 40-59% reflects that the candidate demonstrates a moderate level of reliability, marked by a balanced mix of accountability and resilience. While the candidate often takes responsibility for their actions and can handle challenges with a degree of robustness, there are still instances of inconsistency that need addressing. This indicates that the candidate has the potential to perform reliably in an operational role but may occasionally struggle with maintaining this standard under pressure. To excel in positions where consistent performance and dependability are critical, the candidate should focus on strengthening their accountability and resilience further. With targeted development in these areas, the candidate could achieve the high reliability necessary for operational excellence.\n",
+                  "scoreMax": 59,
+                  "assignedTo": "multiMindsetSpectrum",
+                  "summary": "A score of 40-59% indicates the candidate shows moderate reliability with a balance of accountability and resilience, though there are still areas for improvement to ensure consistent performance."
+                }
+              ],
+              "childrenReportModuleItems": [
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "dacd9923-fa58-4450-929a-6ba9afca4f3d",
+                  "itemTitle": "Accountable vs. Irresponsible (70%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 1,
+                      "itemId": "ca2552d9-dac4-4660-81e3-2949f630ac8b",
+                      "itemTitle": "Accountable vs. Irresponsible",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 20,
+                          "_id": "2550324c-b06b-4896-b8fe-11e8e454b4ed",
+                          "mindset": {
+                            "number": 1,
+                            "_id": "ca2552d9-dac4-4660-81e3-2949f630ac8b",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-05T08:22:56.884Z",
+                            "_updatedDate": "2024-09-06T12:53:49.675Z",
+                            "title": "Accountable vs. Irresponsible"
+                          },
+                          "reportText": "The candidate exhibits limited alignment with an Accountable Mindset, showing occasional reluctance to take full responsibility for actions and outcomes. This sporadic accountability can lead to inconsistencies in task completion, with standards sometimes not being met. Issues may be addressed but not always promptly, affecting the overall reliability and performance within the team. In practice, this mindset can create challenges in building a culture of trust and continuous improvement. The candidate may sometimes shift blame, hindering proactive problem-solving and the development of a supportive and dependable team environment. While there are moments of accountability, the overall inconsistency can impact the team's ability to achieve sustained success and maintain high performance standards.",
+                          "scoreMax": 39,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 20-39% alignment with the Accountable Mindset attribute."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                },
+                {
+                  "type": "mindsetSpectrum",
+                  "number": 0,
+                  "itemId": "40f0a4e0-4b56-4771-8495-d7c9ba275928",
+                  "itemTitle": "Resilient vs. Fragile (30%)",
+                  "howToContents": [],
+                  "itemReportModules": [],
+                  "childrenReportModuleItems": [
+                    {
+                      "type": "mindset",
+                      "number": 4,
+                      "itemId": "95142545-3b44-4933-a917-2711479dcf27",
+                      "itemTitle": "Resilient vs. Fragile Mindset",
+                      "howToContents": [],
+                      "itemReportModules": [
+                        {
+                          "scoreMin": 60,
+                          "_id": "9f9fd185-9912-403f-88cb-9d9e527030fd",
+                          "mindset": {
+                            "number": 4,
+                            "_id": "95142545-3b44-4933-a917-2711479dcf27",
+                            "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                            "_createdDate": "2024-09-11T09:32:21.188Z",
+                            "_updatedDate": "2024-09-11T09:32:33.133Z",
+                            "title": "Resilient vs. Fragile Mindset"
+                          },
+                          "reportText": "The candidate exhibits a strong capacity for resilience, consistently overcoming challenges and adapting well to adversity. They maintain a positive outlook and demonstrate a proactive approach to problem-solving, often bouncing back quickly from failures. Their ability to remain optimistic during tough times and seek continuous growth opportunities is evident, fostering both personal and professional success. While they show considerable resilience, there are occasional instances where their response to setbacks could be more robust. To further enhance their resilient mindset, the candidate should focus on consistently maintaining their proactive and optimistic approach across all situations. By continuing to view setbacks as growth opportunities and embracing challenges with confidence, they can sustain long-term success and stability in various aspects of life, making them a valuable asset in any context.",
+                          "scoreMax": 79,
+                          "assignedTo": "mindset",
+                          "summary": "This candidate demonstrates a 60-79% alignment with the Resilient Mindset attribute, showing strong potential."
+                        }
+                      ],
+                      "childrenReportModuleItems": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
