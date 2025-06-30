@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
 
-  <title>TB - Report</title>
+  <title>The Mindset IQ Report</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -833,6 +833,8 @@
     function populateData() {
       console.log(data);
 
+      console.log('data.reportContent.reportModuleContentListItems', data?.reportContent?.reportModuleContentListItems);
+
       try {
         populate_recruiterData(data.recruiter);
         populate_candidateData(data.candidate);
@@ -869,13 +871,16 @@
         "Name",
         questionnaireData.name
       );
+
       questionnaireDetailsBody.appendChild(
         detailItem_questionnaireName.element
       );
+
       const detailItem_questionnaireType = new DetailItemComponent(
         "Type of Report:",
         questionnaireData.type
       );
+
       questionnaireDetailsBody.appendChild(
         detailItem_questionnaireType.element
       );
@@ -893,6 +898,14 @@
       questionnaireDetailsBody.appendChild(
         detailItem_questionnaireTime.element
       );
+
+      if (typeof questionnaireData?.type == 'string') {
+        const titleElement = document.querySelector('title');
+
+        if (titleElement) {
+          titleElement.innerHTML = `The Mindset IQ Report - ${questionnaireData.type}`;
+        }
+      }
     }
 
     function populate_index() {
@@ -1013,6 +1026,7 @@
       );
       howToContentElement.appendChild(howToContentComponent.element);
     }
+
     function populate_list_reportModule(reportModuleData) {
       const reportModulesContentCardBody =
         document.querySelector(".content-cards");
@@ -1102,7 +1116,12 @@
         window.print();
       });
 
-      
+      const titleElement = document.querySelector('title');
+
+      if (titleElement) {
+        titleElement.innerHTML = `The Mindset IQ Report`;
+      }
+
       getPageData(populateData);
     });
   </script>
