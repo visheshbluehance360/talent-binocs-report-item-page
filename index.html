@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=320, user-scalable=yes" id="wixMobileViewport">
 
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
-
   <title>TB - Report</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +17,8 @@
   <script>
     document.querySelector("#wixMobileViewport")?.remove();
   </script>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
 
   <style id="main">
     .displayNone {
@@ -610,7 +610,6 @@
       });
     }
   </script>
-
   <script id="classes">
     class DetailItemComponent {
       _title = "";
@@ -881,7 +880,6 @@
     }
 
   </script>
-
   <script id="populateData">
     function populateData(data) {
       console.log(data);
@@ -1021,7 +1019,6 @@
       reportModulesContentCardBody.appendChild(reportModuleComponent.element);
     }
   </script>
-
   <script id="fetchData">
     function getPageData() {
       const siteMainUrl = "https://www.themindsetiq.com";
@@ -1065,7 +1062,6 @@
         });
     }
   </script>
-
   <script id="handleURLChange">
     let lastUrl = location.href;
 
@@ -1084,7 +1080,6 @@
     observer.observe(document, { subtree: true, childList: true });
 
   </script>
-
   <script id="init">
     addEventListener("load", () => {
       const printButton = document.querySelector("button.print");
