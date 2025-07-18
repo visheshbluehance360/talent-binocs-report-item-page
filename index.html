@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=320, user-scalable=yes" id="wixMobileViewport">
+  <meta name="viewport" content="width=320, user-scalable=yes" id="wixMobileViewport" />
 
-  <title>TB - Report</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>The Mindset IQ Report</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <script>
     document.querySelector("#wixMobileViewport")?.remove();
@@ -38,7 +40,7 @@
     }
 
     .report-page-root {
-      --primary-color-blue: #105BBF;
+      --primary-color-blue: #105bbf;
       --color-border: #acacac;
     }
 
@@ -293,7 +295,7 @@
 
     .report-page-root .how-to-content-item .header .title {
       font-weight: 700;
-      color: #FF7622;
+      color: #ff7622;
     }
 
     .report-page-root .header-right-text {
@@ -522,14 +524,17 @@
   <div class="report-page-root">
     <header>
       <img class="logo" src="https://static.wixstatic.com/shapes/9c9398_0960d08200ac49c7bfc44946953dfd28.svg"
-        alt="Header Image">
+        alt="Header Image" />
       <button class="print">Print</button>
     </header>
 
     <div class="report-not-found-message">
       <h3>Report Not Found</h3>
 
-      <p>The requested report could not be found. Please verify the report ID and try again.</p>
+      <p>
+        The requested report could not be found. Please verify the report ID
+        and try again.
+      </p>
     </div>
 
     <table class="printable">
@@ -541,13 +546,11 @@
             </div>
 
             <div class="recruiter content-card full-width">
-
               <div class="content-card-title">Conducted by</div>
               <div class="content-card-body detail-item">
                 <div class="name">Recruiter Name</div>
                 <div class="email">recruiter@email.com</div>
               </div>
-
             </div>
 
             <div class="candidate content-card full-width">
@@ -563,112 +566,95 @@
               <div class="content-card-body"></div>
             </div>
 
-            <div class="index content-card full-width">
+            <div class="index content-card full-width displayNone">
               <div class="content-card-title">List of Contents</div>
               <div class="content-card-body">
-                <ol>
-                </ol>
+                <ol></ol>
               </div>
             </div>
-
           </td>
         </tr>
-
       </tbody>
     </table>
-
   </div>
 
   <script id="utils">
     function formatDate(date) {
       date = new Date(date);
-
       const day = date.getDate();
-      const month = date.toLocaleString('en-US', { month: 'long' });
+      const month = date.toLocaleString("en-US", { month: "long" });
       const year = date.getFullYear();
-
       const suffix = (d) => {
-        if (d > 3 && d < 21) return 'th';
+        if (d > 3 && d < 21) return "th";
         switch (d % 10) {
-          case 1: return 'st';
-          case 2: return 'nd';
-          case 3: return 'rd';
-          default: return 'th';
+          case 1:
+            return "st";
+          case 2:
+            return "nd";
+          case 3:
+            return "rd";
+          default:
+            return "th";
         }
       };
-
       return `${day}${suffix(day)} ${month} ${year}`;
     }
-
     function formatTime(date) {
       date = new Date(date);
-
-      return date.toLocaleTimeString('en-US', {
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: true
+      return date.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
       });
     }
   </script>
   <script id="classes">
+    let data;
+
     class DetailItemComponent {
       _title = "";
       _body = "";
-
       constructor(title = "", body = "") {
         this._title = title;
         this._body = body;
-
         this.titleElement = this.createTitleElement();
         this.bodyElement = this.createBodyElement();
         this.element = this.createElement();
       }
-
       createTitleElement() {
         const element = document.createElement("div");
         element.classList.add("title");
         element.textContent = this._title;
         return element;
       }
-
       createBodyElement() {
         const element = document.createElement("div");
         element.classList.add("body");
         element.textContent = this._body;
         return element;
       }
-
       createElement() {
         const element = document.createElement("div");
         element.classList.add("detail-item");
-
         element.appendChild(this.titleElement);
         element.appendChild(this.bodyElement);
-
         return element;
       }
-
       set title(value) {
         this._title = value;
-
         this.titleElement.textContent = value;
       }
-
       get title() {
         return this._title;
       }
-
       set body(value) {
         this._body = value;
-
         this.bodyElement.textContent = value;
       }
-
       get body() {
         return this._body;
       }
     }
-
     class ReportModuleComponent {
       constructor(
         titleText = "",
@@ -684,49 +670,43 @@
         this.graphicUrl = graphicUrl;
         this.comprehensiveReportText = comprehensiveReportText;
       }
-
       get element() {
         const element = document.createElement("tr");
-        element.classList.add("report-modules", "full-width", "list", "no-border-padding-bg", "content-card");
-
+        element.classList.add(
+          "report-modules",
+          "full-width",
+          "list",
+          "no-border-padding-bg",
+          "content-card"
+        );
         const td = document.createElement("td");
-
         const logoContainer = document.createElement("div");
         logoContainer.classList.add("logo-container");
-
         const logo = document.createElement("img");
         logo.classList.add("logo");
-        logo.src = "https://static.wixstatic.com/shapes/9c9398_0960d08200ac49c7bfc44946953dfd28.svg";
-
+        logo.src =
+          "https://static.wixstatic.com/shapes/9c9398_0960d08200ac49c7bfc44946953dfd28.svg";
         logoContainer.appendChild(logo);
-
         td.appendChild(logoContainer);
-
         const card = document.createElement("div");
         card.classList.add("report-module-item", "header-body-item-card");
-
         const header = document.createElement("div");
         header.classList.add("header");
-
         if (this.titleText) {
           const title = document.createElement("div");
           title.classList.add("title");
           title.innerText = this.titleText;
           header.appendChild(title);
         }
-
         if (this.scoreText) {
           const headerRightText = document.createElement("div");
           headerRightText.classList.add("header-right-text");
           headerRightText.innerText = this.scoreText;
           header.appendChild(headerRightText);
         }
-
         card.appendChild(header);
-
         const body = document.createElement("div");
         body.classList.add("body");
-
         if (this.summaryText) {
           const textContent_Summary = new TextContentComponent(
             "Summary",
@@ -734,7 +714,6 @@
           );
           body.appendChild(textContent_Summary.element);
         }
-
         if (this.graphicUrl) {
           const scoreGraphic = document.createElement("img");
           scoreGraphic.classList.add("score-gauge");
@@ -743,7 +722,6 @@
           scoreGraphic.loading = "lazy";
           body.appendChild(scoreGraphic);
         }
-
         if (this.comprehensiveReportText) {
           const textContent_ComprehensiveReport = new TextContentComponent(
             "Comprehensive Report",
@@ -751,263 +729,318 @@
           );
           body.appendChild(textContent_ComprehensiveReport.element);
         }
-
         card.appendChild(body);
-
         td.appendChild(card);
-
         element.appendChild(td);
-
         return element;
       }
     }
-
     class TextContentComponent {
       constructor(titleText = "", bodyText = "") {
         this.type = "TextContentComponent";
         this.titleText = titleText;
         this.bodyText = bodyText;
       }
-
       get element() {
         const element = document.createElement("div");
         element.classList.add("text-content");
-
         const title = document.createElement("div");
         title.classList.add("title");
         title.innerText = this.titleText;
-
         const body = document.createElement("div");
         body.classList.add("body");
         body.innerHTML = this.bodyText;
-
         element.appendChild(title);
         element.appendChild(body);
-
         return element;
       }
     }
-
     class HowToContentComponent {
-      _title = '';
-      _body = '';
+      _title = "";
+      _body = "";
       _contents = [];
-
       constructor(title = "", contents = []) {
         this.type = "HowToContentComponent";
         this._title = title;
         this._contents = contents;
-
         this.titleElement = this.createTitleElement();
         this.bodyElement = this.createBodyElement();
-
         this.element = this.createElement();
       }
-
       createTitleElement() {
         const header = document.createElement("div");
         header.classList.add("header");
-
         const title = document.createElement("div");
         title.classList.add("title");
         title.innerText = this._title;
         header.appendChild(title);
-
         return header;
       }
-
       createBodyElement() {
         const body = document.createElement("div");
         body.classList.add("body");
-
-        this.contents.filter(content => content.text)
+        this.contents
+          .filter((content) => content.text)
           .forEach((content) => {
             const textContentBody = document.createElement("div");
             textContentBody.classList.add("text-content-body");
             textContentBody.innerHTML = content.text;
-
             body.append(textContentBody);
           });
-
         return body;
       }
-
       createElement() {
         const element = document.createElement("tr");
-        element.classList.add("how-to-content", "full-width", "list", "no-border-padding-bg", "content-card");
-
+        element.classList.add(
+          "how-to-content",
+          "full-width",
+          "list",
+          "no-border-padding-bg",
+          "content-card"
+        );
         const td = document.createElement("td");
-
         const logoContainer = document.createElement("div");
         logoContainer.classList.add("logo-container");
-
         const logo = document.createElement("img");
         logo.classList.add("logo");
-        logo.src = "https://static.wixstatic.com/shapes/9c9398_0960d08200ac49c7bfc44946953dfd28.svg";
-
+        logo.src =
+          "https://static.wixstatic.com/shapes/9c9398_0960d08200ac49c7bfc44946953dfd28.svg";
         logoContainer.appendChild(logo);
-
         td.appendChild(logoContainer);
-
         const card = document.createElement("div");
         card.classList.add("how-to-content-item", "header-body-item-card");
-
         card.appendChild(this.titleElement);
         card.appendChild(this.bodyElement);
-
         td.appendChild(card);
-
         element.appendChild(td);
-
         return element;
       }
-
       set title(value) {
         this._title = value;
       }
-
       get title() {
         return this._title;
       }
-
       set contents(value) {
         this._contents = value;
       }
-
       get contents() {
         return this._contents;
       }
     }
-
   </script>
   <script id="populateData">
-    function populateData(data) {
+    function populateData() {
       console.log(data);
 
-      populateRecruiterData(data.recruiter);
-      populateCandidateData(data.candidate);
-      populateQuestionnaireData(data.questionnaire);
+      console.log('data.reportContent.reportModuleContentListItems', data?.reportContent?.reportModuleContentListItems);
 
-      populate_index(data);
+      try {
+        populate_recruiterData(data.recruiter);
+        populate_candidateData(data.candidate);
+        populate_questionnaireData(data.questionnaire);
+        populate_index();
 
-      populateList(data);
+        populate_list();
+      } catch (error) {
+        console.error("Error populating data:", error);
+      }
     }
 
-    function populateRecruiterData(recruiterData) {
+    function populate_recruiterData(recruiterData) {
       const recruiterNameElement = document.querySelector(".recruiter .name");
-      const recruiterEmailElement = document.querySelector(".recruiter .email");
-
+      const recruiterEmailElement =
+        document.querySelector(".recruiter .email");
       recruiterNameElement.textContent = recruiterData?.name || "";
       recruiterEmailElement.textContent = recruiterData?.email || "";
     }
 
-    function populateCandidateData(candidateData) {
+    function populate_candidateData(candidateData) {
       const recruiterNameElement = document.querySelector(".candidate .name");
-      const recruiterEmailElement = document.querySelector(".candidate .email");
-
+      const recruiterEmailElement =
+        document.querySelector(".candidate .email");
       recruiterNameElement.textContent = candidateData.name;
       recruiterEmailElement.textContent = candidateData.email;
     }
 
-    function populateQuestionnaireData(questionnaireData) {
+    function populate_questionnaireData(questionnaireData) {
       const questionnaireDetailsBody = document.querySelector(
         ".questionnaire-details .content-card-body"
       );
-
       const detailItem_questionnaireName = new DetailItemComponent(
-        "Name", questionnaireData.name
+        "Name",
+        questionnaireData.name
       );
-      questionnaireDetailsBody.appendChild(detailItem_questionnaireName.element);
+
+      questionnaireDetailsBody.appendChild(
+        detailItem_questionnaireName.element
+      );
 
       const detailItem_questionnaireType = new DetailItemComponent(
-        "Type of Report:", questionnaireData.type
+        "Type of Report:",
+        questionnaireData.type
       );
-      questionnaireDetailsBody.appendChild(detailItem_questionnaireType.element);
 
+      questionnaireDetailsBody.appendChild(
+        detailItem_questionnaireType.element
+      );
       const detailItem_questionnaireDate = new DetailItemComponent(
-        "Date of Report:", formatDate(questionnaireData.date)
+        "Date of Report:",
+        formatDate(questionnaireData.date)
       );
-      questionnaireDetailsBody.appendChild(detailItem_questionnaireDate.element);
-
+      questionnaireDetailsBody.appendChild(
+        detailItem_questionnaireDate.element
+      );
       const detailItem_questionnaireTime = new DetailItemComponent(
-        "Time of Report:", formatTime(questionnaireData.date)
+        "Time of Report:",
+        formatTime(questionnaireData.date)
       );
-      questionnaireDetailsBody.appendChild(detailItem_questionnaireTime.element);
+      questionnaireDetailsBody.appendChild(
+        detailItem_questionnaireTime.element
+      );
+
+      if (typeof questionnaireData?.type == 'string') {
+        const titleElement = document.querySelector('title');
+
+        if (titleElement) {
+          titleElement.innerHTML = `The Mindset IQ Report - ${questionnaireData.type}`;
+        }
+      }
     }
 
-    function populate_index(data) {
+    function populate_index() {
       const howToContentCategories_forIndex = [];
 
       let howToContentList = [];
 
-      data?.list?.forEach(listItem => {
-        listItem?.howToContents?.forEach(howToContent => {
-          if (!howToContentList.find(howToContentItem => howToContentItem._id == howToContent._id)) {
+      data?.reportContent?.initialListItems?.forEach((listItem) => {
+        listItem?.howToContents?.forEach((howToContent) => {
+          if (
+            !howToContentList.find(
+              (howToContentItem) => howToContentItem._id == howToContent._id
+            )
+          ) {
             howToContentList.push(howToContent);
           }
         });
       });
 
-      console.log("howToContentList", howToContentList);
+      const list = data?.reportContent?.reportModuleContentListItems?.reduce(read_all_howToContents, []);
 
-      howToContentList.forEach(howToContentListItem => {
-        data?.howToContentCategories?.forEach(howToContentCategory => {
+      howToContentList = howToContentList.concat(list);
+
+      data?.reportContent?.finalListItems?.forEach((listItem) => {
+        listItem?.howToContents?.forEach((howToContent) => {
+          howToContentList.push(howToContent);
+        });
+      });
+
+      howToContentList.forEach((howToContentListItem) => {
+        data?.howToContentCategories?.forEach((howToContentCategory) => {
           if (
-            howToContentCategory.value == howToContentListItem.assignTo?.value &&
-            !howToContentCategories_forIndex.find(item => item.label == howToContentCategory.label)
+            howToContentCategory.value ==
+            howToContentListItem.assignTo?.value &&
+            !howToContentCategories_forIndex.find(
+              (item) => item.label == howToContentCategory.label
+            )
           ) {
             howToContentCategories_forIndex.push(howToContentCategory);
           }
         });
       });
 
-      console.log("howToContentCategories_forIndex", howToContentCategories_forIndex);
+      if (!howToContentCategories_forIndex?.length) {
+        return false;
+      }
 
-      const indexElement = document.querySelector(".index .content-card-body ol");
+      const indexListElement = document.querySelector(
+        ".index .content-card-body ol"
+      );
 
       howToContentCategories_forIndex.forEach((indexItem) => {
         const indexItemElement = document.createElement("li");
         indexItemElement.innerText = indexItem.label;
-        indexElement.appendChild(indexItemElement);
+        indexListElement.appendChild(indexItemElement);
       });
-    }
 
-    function populateList(data) {
-      const listData = data.list;
-
-      listData.forEach((listItemData) => {
-        if (listItemData.howToContents?.length) {
-          listItemData.howToContents.forEach(populateList_howToContent);
-        }
-
-        if (listItemData.reportModule) {
-          populateList_reportModule(data, listItemData.reportModule);
-        }
-      });
-    }
-
-    function populateList_howToContent(howToContentData) {
-      const howToContentElement = document.querySelector(".content-cards");
-
-      const howToContentComponent = new HowToContentComponent(
-        howToContentData.assignTo?.label, howToContentData.contents
+      const indexElement = document.querySelector(
+        ".index"
       );
 
+      indexElement.classList.remove('displayNone');
+    }
+
+    function read_all_howToContents(list, reportModuleContentListItem) {
+      if (reportModuleContentListItem?.howToContents) {
+        list = list.concat(reportModuleContentListItem.howToContents);
+      }
+
+      const subList = reportModuleContentListItem?.childrenReportModuleItems?.reduce(read_all_howToContents, []);
+
+      if (subList?.length) {
+        list = list.concat(subList);
+      }
+
+      return list;
+    }
+
+    function populate_list() {
+      try {
+        data.reportContent.initialListItems.forEach(populate_listItem);
+
+        data.reportContent.reportModuleContentListItems.forEach(populate_reportModuleContentListItem);
+
+        data.reportContent.finalListItems.forEach(populate_listItem);
+
+      } catch (error) {
+        console.error('error while trying to populate list', error);
+      }
+    }
+
+    function populate_reportModuleContentListItem(reportModuleContentListItem) {
+      try {
+        reportModuleContentListItem?.howToContents?.forEach(populate_list_howToContent);
+
+        reportModuleContentListItem?.itemReportModules?.forEach(itemReportModule => populate_list_reportModule(itemReportModule));
+
+        reportModuleContentListItem?.childrenReportModuleItems?.forEach(populate_reportModuleContentListItem);
+      } catch (error) {
+        console.error('error in populate_reportModuleContentListItem', error, 'for item', reportModuleContentListItem);
+      }
+    }
+
+    function populate_listItem(listItemData) {
+      if (listItemData.howToContents?.length) {
+        listItemData.howToContents.forEach(populate_list_howToContent);
+      }
+      if (listItemData.reportModule) {
+        populate_list_reportModule(listItemData.reportModule);
+      }
+    }
+
+    function populate_list_howToContent(howToContentData) {
+      const howToContentElement = document.querySelector(".content-cards");
+      const howToContentComponent = new HowToContentComponent(
+        howToContentData.assignTo?.label,
+        howToContentData.contents
+      );
       howToContentElement.appendChild(howToContentComponent.element);
     }
 
-    function populateList_reportModule(data, reportModuleData) {
-      const reportModulesContentCardBody = document.querySelector(".content-cards");
-
+    function populate_list_reportModule(reportModuleData) {
+      const reportModulesContentCardBody =
+        document.querySelector(".content-cards");
       const title = reportModuleData[reportModuleData.assignedTo].title;
-      const scoreText = [reportModuleData.scoreMin, reportModuleData.scoreMax].join("-");
-      const scoreGraphicItem = data.scoreGraphics.find(scoreGraphic =>
-        scoreGraphic.score >= reportModuleData.scoreMin &&
-        scoreGraphic.score <= reportModuleData.scoreMax
+      const scoreText = [
+        reportModuleData.scoreMin,
+        reportModuleData.scoreMax,
+      ].join("-");
+      const scoreGraphicItem = data.scoreGraphics.find(
+        (scoreGraphic) =>
+          scoreGraphic.score >= reportModuleData.scoreMin &&
+          scoreGraphic.score <= reportModuleData.scoreMax
       );
-
       const scoreGraphicUrl = scoreGraphicItem?.image;
-
       const reportModuleComponent = new ReportModuleComponent(
         title,
         scoreText ? `${scoreText}%` : "",
@@ -1015,62 +1048,54 @@
         scoreGraphicUrl,
         reportModuleData.reportText
       );
-
       reportModulesContentCardBody.appendChild(reportModuleComponent.element);
     }
   </script>
   <script id="fetchData">
-    function getPageData() {
+    function getPageData(populateData) {
       const siteMainUrl = "https://www.themindsetiq.com";
       const httpFunctionName = "reportpagecontent";
-
       const searchParams = new URLSearchParams(window.location.search);
-
       const pageItemId = searchParams.get("itemId");
-
       const url = `${siteMainUrl}/_functions/${httpFunctionName}/${pageItemId}`;
-
       const root = document.querySelector(".report-page-root");
-
       console.log("url", url);
 
       fetch(url)
-        .then(res => {
+        .then((res) => {
           if (!res.ok) {
             throw new Error("Network response was not ok");
           }
-
-          if (res.headers.get('content-type')?.includes('application/json')) {
+          if (res.headers.get("content-type")?.includes("application/json")) {
             return res.json();
           }
-
-          return res.text().then(text => { throw new Error(text); });
+          return res.text().then((text) => {
+            throw new Error(text);
+          });
         })
-        .then(data => {
-          if (!data || data.error) {
+        .then((resultData) => {
+          if (!resultData || resultData.error) {
             root.classList.add("report-not-found");
           } else {
-            populateData(data);
+            data = resultData;
+
+            populateData();
 
             root.classList.add("loaded-data");
           }
         })
-        .catch(error => {
+        .catch((error) => {
           console.error("Error fetching data:", error);
-
           root.classList.add("report-not-found");
         });
     }
   </script>
   <script id="handleURLChange">
     let lastUrl = location.href;
-
     const observer = new MutationObserver(() => {
       if (location.href !== lastUrl) {
         lastUrl = location.href;
-
         console.log("URL changed (mutation observer)");
-
         document.querySelector(".report-page-root").remove();
 
         location.reload();
@@ -1078,20 +1103,24 @@
     });
 
     observer.observe(document, { subtree: true, childList: true });
-
   </script>
+
   <script id="init">
     addEventListener("load", () => {
       const printButton = document.querySelector("button.print");
-
       printButton.addEventListener("click", () => {
         window.print();
       });
 
-      getPageData();
+      const titleElement = document.querySelector('title');
+
+      if (titleElement) {
+        titleElement.innerHTML = `The Mindset IQ Report`;
+      }
+
+      getPageData(populateData);
     });
   </script>
-
 </body>
 
 </html>

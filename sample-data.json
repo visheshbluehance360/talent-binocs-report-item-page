@@ -1,0 +1,351 @@
+{
+  "questionnaireCandidateId": "ec0ed322-7147-43ce-bf19-6f619f794ded",
+  "candidate": {
+    "name": "Vishesh",
+    "email": "vishesh.bluehance@gmail.com"
+  },
+  "recruiter": {
+    "name": "Vishesh V",
+    "email": "vishesh.bluehance@gmail.com"
+  },
+  "questionnaire": {
+    "name": "Test - 30th June'25",
+    "date": "2025-06-30T08:55:38.812Z",
+    "type": "Values Alignment"
+  },
+  "reportContent": {
+    "initialListItems": [
+      {
+        "howToContents": [
+          {
+            "assignTo": {
+              "label": "Introduction",
+              "value": "all-1"
+            },
+            "_id": "ca4624a9-89b4-4f2b-a19f-7bfc651a5af0",
+            "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+            "_createdDate": "2025-04-09T01:18:17.815Z",
+            "_updatedDate": "2025-06-15T23:43:53.543Z",
+            "contents": [
+              {
+                "_id": "15f9aa3f-760f-4e23-939c-1f5931d7b8e2",
+                "text": "<p><span style=\"font-weight:bold\">Introduction to the Report</span></p><p>In a world where businesses pivot overnight, the real hire is not the one who fits the job on paper.  It is the one whose mindset fuels your mission. <span style=\"font-style:italic\">The Mindset IQ</span> offers a game-changing approach to talent evaluation, designed to reveal not just who a candidate is on paper, but who they are in action. Built on a foundation of psychological insight and behavioral science, this system uncovers the mental frameworks that influence how individuals think, solve problems, collaborate, lead, and grow. By aligning mindset with the specific demands of a role or culture, organisations can dramatically improve hiring outcomes, reducing turnover, strengthening team cohesion, and unlocking untapped performance potential</p><p>What sets <span style=\"font-style:italic\">The Mindset IQ</span> apart is its ability to go deeper than traditional assessments. While CVs and interviews tell you what a candidate has done, this system reveals how they are  wired to behave under pressure, adapt to change, and engage with others. It focuses on potential, evaluating how candidates are likely to perform, evolve, and align with your unique organisational environment. This forward-thinking model is not only more predictive of success, but also more inclusive and future-focused.</p><p>This report includes a modular breakdown of mindset-based evaluations across multiple dimensions, tailored to your organisation’s needs. Whether you are assessing alignment with <span style=\"font-weight:bold\">core values</span>, <span style=\"font-weight:bold\">organisational culture</span>, <span style=\"font-weight:bold\">operational, strategic, technical, physical, or creative role virtues</span>, or measuring suitability across <span style=\"font-weight:bold\">interaction levels; </span>customer-facing, collaborative, or independent;<span style=\"font-style:italic\">The Mindset IQ</span> provides precision insights powered by proprietary mindset spectrums.</p><p> Key mindset spectrums include Growth vs. Fixed Mindset, Proactive vs. Reactive Thinking, Adaptive vs. Rigid Behaviour, Collaborative vs. Egocentric Orientation, Analytical vs. Indecisive Decision-Making, and more. By interpreting how candidates naturally position along these spectrums, hiring managers gain a full-spectrum understanding of behavioral alignment, empowering confident, data-driven decisions.</p>",
+                "number": "1"
+              },
+              {
+                "_id": "5823b763-dbf8-4b68-8876-3417955e9cf6",
+                "text": "<p> <span style=\"font-weight:bold\">Advantages of this Report:</span></p><ul><li><span style=\"font-weight:bold\">Depth of Insight</span>: Understand how candidates think, not just what they know.</li><li><span style=\"font-weight:bold\">Role-Specific Clarity</span>: Align strengths with the exact demands of each role.</li><li><span style=\"font-weight:bold\">Cultural Fit Confidence</span>: Build teams with shared values and synergy.</li><li><span style=\"font-weight:bold\">Reduced Turnover</span>: Hire right the first time with mindset-aligned matches.</li><li><span style=\"font-weight:bold\">Performance Optimization</span>: Create teams that thrive, not just survive.</li></ul>",
+                "number": "2"
+              }
+            ],
+            "title": "Introduction"
+          }
+        ]
+      },
+      {
+        "howToContents": [
+          {
+            "assignTo": {
+              "label": "Introduction",
+              "value": "all-1"
+            },
+            "_id": "31568602-78dc-4aab-9324-7094f71bf3ad",
+            "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+            "_createdDate": "2025-04-09T01:14:16.061Z",
+            "_updatedDate": "2025-06-15T23:42:50.884Z",
+            "contents": [
+              {
+                "_id": "b91e0f8b-7e09-4c3f-89df-43e9a0ecc2f6",
+                "text": "<p> <span style=\"font-weight:bold\">How to Use This Report:</span></p><p>To effectively utilise this report in your decision-making process, follow these guidelines:</p><p><span style=\"font-style:italic\">1.</span> <span style=\"font-style:italic\">Interpret the Scores</span>:</p><ul><li>Each value is rated on a scale from 0-100%, measured in 20% increments. These scores provide a clear and comprehensive assessment of the candidate&#x27;s alignment.</li><li>Review the detailed modules corresponding to each increment to form a holistic view of the candidate&#x27;s potential to embody and promote a particular attribute.</li></ul><p><span style=\"font-style:italic\">2</span>. <span style=\"font-style:italic\">Focus on Core attributes</span>:</p><ul><li>The most important attributes for your specific context are critical for ensuring the candidate can effectively contribute to the organisation’s success.Evaluate how the candidate&#x27;s scores align with these selected attributes to determine their suitability within your team and overall company culture.</li></ul><p><span style=\"font-style:italic\">3</span>.  <span style=\"font-style:italic\">Make Informed Decisions</span></p><ul><li>Use the insights gained from the report to compare candidates and identify those who best match the desired attributes. This alignment is crucial for fostering a cohesive and motivated workforce.</li><li>Consider the specific demands of the role and the overall balance of values required for optimal performance and long-term success.</li></ul><p> </p><p>Whether you are building a startup team, scaling a franchise, or evolving a corporate culture, <span style=\"font-style:italic\">The Mindset IQ</span> transforms hiring into a strategic advantage. It is more than a report. It is a reliable roadmap to smarter, faster, and more future-proof talent decisions.</p>",
+                "number": "1"
+              }
+            ],
+            "title": "Introduction"
+          }
+        ]
+      }
+    ],
+    "reportModuleContentListItems": [
+      {
+        "type": "compartment",
+        "number": 2,
+        "itemId": "efd7b5cc-d4ee-4db9-a8b7-56a34bed82cb",
+        "itemTitle": "Values Alignment",
+        "howToContents": [
+          {
+            "assignTo": {
+              "collectionName": "Compartments",
+              "label": "Values Alignment",
+              "value": "efd7b5cc-d4ee-4db9-a8b7-56a34bed82cb"
+            },
+            "_id": "ce66f445-b237-46ca-a60c-0c6393c4ce0f",
+            "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+            "_createdDate": "2025-04-02T00:59:56.829Z",
+            "_updatedDate": "2025-06-15T23:28:06.434Z",
+            "contents": [
+              {
+                "_id": "613cddf6-d991-412d-9e1f-f020d2b653a7",
+                "text": "<p><span style=\"font-weight:bold\">Introduction</span></p><p> What turns a great hire into an exceptional one? Beyond skills and experience, it is their values that fuel long-term success. When a candidate’s personal values align with those of your organisation, everything clicks. Teams collaborate better, decisions reflect the company’s mission, and individuals are more engaged, loyal, and purpose-driven.</p><p>That is why assessing values alignment is one of the most powerful steps in building a cohesive, high-performing culture. It reduces turnover, boosts morale, and ensures every hire strengthens the foundation of your business.</p><p>This report dives beneath the surface to explore how well this candidate’s mindset aligns with the values that matter most to your company. Using a unique mindset spectrum-based evaluation, <span style=\"font-style:italic\">The Mindset IQ</span> assess core traits like resilience, leadership, integrity, and vision, providing a nuanced view of their values fit. Each value is scored in 20% increments from 0% to 100%, and paired with a tailored, in-depth explanation for that range,  giving you immediate clarity and actionable insights.</p><p>The focus of this section of the report is on your top three selected values, chosen from a curated list of ten, such as Teamwork, Innovation, Accountability, and more. These insights go beyond intuition, helping you make confident, values-aligned hiring decisions that contribute to a stronger, more unified team. Whether it is Integrity, Excellence, Customer Focus, or another vital trait, this report helps ensure you are selecting individuals who not only perform well but truly belong.</p>",
+                "number": "1"
+              }
+            ],
+            "title": "Values Alignment"
+          }
+        ],
+        "itemReportModules": [],
+        "childrenReportModuleItems": [
+          {
+            "type": "configItem",
+            "number": 1,
+            "itemId": "3bc10cfb-bd78-4f31-b32f-879d3afeb709",
+            "itemTitle": "Values",
+            "howToContents": [],
+            "itemReportModules": [],
+            "childrenReportModuleItems": [
+              {
+                "type": "configOption",
+                "number": 1,
+                "itemId": "132f01c0-cfda-4841-90a2-c76fee75e2a7",
+                "itemTitle": "Integrity",
+                "howToContents": [],
+                "itemReportModules": [
+                  {
+                    "scoreMin": 80,
+                    "_id": "03707c51-c51f-4703-b051-8d223ba0653e",
+                    "reportText": "A score of 80-100% demonstrates that the candidate exemplifies outstanding integrity in their professional conduct. This score indicates that the candidate consistently makes ethical decisions, takes full responsibility for their actions, and communicates with exceptional clarity and transparency. Their behaviour aligns closely with the highest standards of integrity, making them a reliable and trustworthy member of the organisation. This level of performance not only reflects their strong moral compass but also sets a positive example for others, contributing significantly to a culture of trust and ethical behaviour within the team.\n",
+                    "scoreMax": 100,
+                    "assignedTo": "configOption",
+                    "summary": "A score of 80-100% signifies an exceptional level of integrity.\n",
+                    "configOption": {
+                      "number": 1,
+                      "_id": "132f01c0-cfda-4841-90a2-c76fee75e2a7",
+                      "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                      "_createdDate": "2024-09-18T13:09:59.264Z",
+                      "_updatedDate": "2025-06-13T11:47:12.419Z",
+                      "title": "Integrity"
+                    }
+                  }
+                ],
+                "childrenReportModuleItems": []
+              },
+              {
+                "type": "configOption",
+                "number": 2,
+                "itemId": "2fa1f06c-7828-4b26-a4f5-ef2e705b5e43",
+                "itemTitle": "Excellence",
+                "howToContents": [],
+                "itemReportModules": [
+                  {
+                    "scoreMin": 60,
+                    "_id": "67958cc7-9778-4234-b860-604ab5518f06",
+                    "reportText": "A score of 60-79% reflects that the candidate consistently exhibits a strong level of excellence in their role. This score indicates that the candidate is detail-oriented, frequently displays a growth mindset, and takes a proactive approach to their work. While there are minor areas that could benefit from further refinement, the candidate's performance is commendable. By maintaining their focus on details, continuing to foster a growth mindset, and enhancing their proactive efforts, the candidate can reach even higher levels of excellence. This strong performance sets a positive example and contributes significantly to the team’s success.",
+                    "scoreMax": 79,
+                    "assignedTo": "configOption",
+                    "summary": "A score of 60-79% demonstrates a high level of excellence with minor areas for improvement.\n\n",
+                    "configOption": {
+                      "number": 2,
+                      "_id": "2fa1f06c-7828-4b26-a4f5-ef2e705b5e43",
+                      "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                      "_createdDate": "2024-09-18T13:10:15.458Z",
+                      "_updatedDate": "2025-06-13T11:47:12.419Z",
+                      "title": "Excellence"
+                    }
+                  }
+                ],
+                "childrenReportModuleItems": []
+              },
+              {
+                "type": "configOption",
+                "number": 3,
+                "itemId": "840b6e10-e506-4f58-92ec-3b29e299b6b2",
+                "itemTitle": "Customer Focus",
+                "howToContents": [],
+                "itemReportModules": [
+                  {
+                    "scoreMin": 40,
+                    "_id": "794c678d-e69e-4b1d-b668-49d6a49f5092",
+                    "reportText": "A score of 40-59% indicates that the candidate demonstrates a fair level of customer focus in their role. This score suggests that the candidate often prioritises customer needs, shows empathy, and looks for solutions, but there are inconsistencies. While they exhibit these qualities to some extent, there is room for improvement to achieve a higher standard. By continuing to cultivate a service-oriented mindset, enhance their empathetic interactions, and maintain a solution-focused approach, the candidate can significantly improve their customer focus. This level of performance provides a solid base, and with further development, they can achieve greater consistency and excellence in customer relations.",
+                    "scoreMax": 59,
+                    "assignedTo": "configOption",
+                    "summary": "A score of 40-59% reflects a moderate level of customer focus with room for growth.\n",
+                    "configOption": {
+                      "number": 3,
+                      "_id": "840b6e10-e506-4f58-92ec-3b29e299b6b2",
+                      "_owner": "9c9398c6-0452-45e1-8d94-b4de16e25734",
+                      "_createdDate": "2024-09-19T07:06:23.855Z",
+                      "_updatedDate": "2025-06-13T11:47:12.419Z",
+                      "title": "Customer Focus"
+                    }
+                  }
+                ],
+                "childrenReportModuleItems": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "finalListItems": [
+      {
+        "howToContents": [
+          {
+            "assignTo": {
+              "label": "Conclusions and Recommendations",
+              "value": "all-2"
+            },
+            "_id": "763fe76f-e8b3-4c46-b4de-3d855d899601",
+            "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+            "_createdDate": "2025-04-02T02:12:16.898Z",
+            "_updatedDate": "2025-06-16T03:18:46.387Z",
+            "contents": [
+              {
+                "_id": "9eeadc80-d939-46e1-92b5-b518080feb35",
+                "text": "<p><span style=\"font-style:italic\">The Mindset IQ</span> system represents a transformative step forward in the way organisations evaluate, select, and develop talent. Across every section, from values and culture to operational, strategic, interpersonal, and technical domains, this framework moves beyond surface-level assessments to uncover the deeper mindset drivers that determine success, engagement, and long-term fit. By focusing on potential rather than just past performance, <span style=\"font-style:italic\">The Mindset IQ</span> empowers organisations to build agile, aligned, and high-performing teams from the inside out.</p><p>What sets this system apart is its modular structure and precision. Each section, whether evaluating virtues for customer-facing, collaborative, or independent roles, delivers weighted, spectrum-based insights scored in 20% increments, creating a consistent, easy-to-interpret format. Whether you&#x27;re hiring for innovation, leadership, resilience, or reliability, <span style=\"font-style:italic\">The Mindset IQ</span> provides clarity around how a candidate <span style=\"font-style:italic\">thinks, acts, and adapts </span>offering you an evidence-backed advantage in selecting the right fit for your unique environment.</p><p>The impact? Reduced turnover, stronger culture alignment, smarter role matching, and faster onboarding. From franchisee readiness and analytical capability to physical skill potential and collaborative temperament, <span style=\"font-style:italic\">The Mindset IQ </span>offers a reliable, scalable way to align individuals with roles where they will thrive, not just survive.</p>",
+                "number": "1"
+              },
+              {
+                "_id": "97036ca8-fb14-4a00-9e09-3625499b9b25",
+                "text": "<p><span style=\"font-weight:bold\">Recommendations:</span></p><ol><li><span style=\"font-weight:bold\">Integrate Early in Hiring</span>: Use <span style=\"font-style:italic\">The Mindset IQ</span> as a core part of your initial screening process to filter for mindset alignment before investing in interviews.</li><li><span style=\"font-weight:bold\">Compare Candidates by Module</span>: Use module scores to benchmark candidates side by side, especially when hiring for role-specific demands like creativity, precision, or autonomy.</li><li><span style=\"font-weight:bold\">Use for Internal Development</span>: Do not limit it to hiring. Use it for internal mobility, team building, and leadership pipeline development.</li><li><span style=\"font-weight:bold\">Align with Your Strategy</span>: Choose the modules and mindset spectrums that reflect your strategic priorities; whether you are scaling innovation, building stability, or launching new teams.</li><li><span style=\"font-weight:bold\">Make Mindset a Cultural Standard</span>: Treat mindset alignment as a non-negotiable in building a thriving culture. The long-term ROI on engagement, performance, and retention speaks for itself.</li></ol><p> </p><p>With<span style=\"font-style:italic\"> The</span> <span style=\"font-style:italic\">Mindset IQ</span>, you are not just hiring smarter; you are shaping the future of your organisation with confidence, consistency, and clarity.</p>",
+                "number": "2"
+              }
+            ],
+            "title": "Conclusions and Recommendations"
+          }
+        ]
+      }
+    ]
+  },
+  "scoreGraphics": [
+    {
+      "image": "https://static.wixstatic.com/media/568efb_a2cc2af57148443591202c3beb35e3be~mv2.png",
+      "_id": "24522e45-11ed-4d0d-a415-d1d5c0d03c10",
+      "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+      "_createdDate": "2025-04-10T20:56:25.054Z",
+      "score": 13,
+      "_updatedDate": "2025-04-10T20:56:25.054Z"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/568efb_fffe478ce5754751aceb42d3e42b656e~mv2.png",
+      "_id": "e0e674f8-319b-42c1-8e46-df8b378ec67f",
+      "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+      "_createdDate": "2025-04-10T20:56:13.341Z",
+      "score": 28,
+      "_updatedDate": "2025-04-10T20:56:13.341Z"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/568efb_3b50b529716646e4a0be19e6ffa27a58~mv2.png",
+      "_id": "4a31769b-3eea-4b3a-87ed-c06378e9d1f5",
+      "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+      "_createdDate": "2025-04-10T20:55:55.300Z",
+      "score": 51,
+      "_updatedDate": "2025-04-10T20:55:55.300Z"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/568efb_316787f3e3de492aa26c6e9e8c611ebc~mv2.png",
+      "_id": "ca2cca6c-d45e-44b2-828a-1f991bf023dc",
+      "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+      "_createdDate": "2025-04-10T20:55:41.939Z",
+      "score": 68,
+      "_updatedDate": "2025-04-10T20:55:41.939Z"
+    },
+    {
+      "image": "https://static.wixstatic.com/media/568efb_3d4bbc9967a24d4b9c36a036c0c99e10~mv2.png",
+      "_id": "8d6f1cc7-d178-46d9-b4c4-8a05128b8638",
+      "_owner": "7d2f1878-a6a1-4e4b-ab27-91ac10261d56",
+      "_createdDate": "2025-04-10T20:55:26.316Z",
+      "score": 91,
+      "_updatedDate": "2025-04-10T20:55:26.316Z"
+    }
+  ],
+  "howToContentCategories": [
+    {
+      "label": "Introduction",
+      "value": "all-1"
+    },
+    {
+      "collectionName": "Compartments",
+      "label": "Values Alignment",
+      "value": "efd7b5cc-d4ee-4db9-a8b7-56a34bed82cb"
+    },
+    {
+      "collectionName": "Compartments",
+      "label": "Culture Specific Attributes",
+      "value": "ac23cba7-fd16-468c-b5ed-6c0bc8b3c70c"
+    },
+    {
+      "collectionName": "QuestionnaireConfigOptions",
+      "label": "Operational Roles Virtues",
+      "value": "e75599b8-b14e-4655-acb2-39517b4d261f"
+    },
+    {
+      "collectionName": "QuestionnaireConfigOptions",
+      "label": "Strategic Roles Virtues",
+      "value": "655a4c38-8568-44fb-b34c-e152d985f8a0"
+    },
+    {
+      "collectionName": "QuestionnaireConfigOptions",
+      "label": "Creative and Innovation Roles Virtues",
+      "value": "a8c881ec-5a5a-44ea-887b-bf4ec47c2a8e"
+    },
+    {
+      "collectionName": "QuestionnaireConfigOptions",
+      "label": "Support and Technical Roles Virtues",
+      "value": "bae2c297-e619-4d26-b50f-b4824f2099ea"
+    },
+    {
+      "collectionName": "QuestionnaireConfigOptions",
+      "label": "Interpersonal Skill Virtues",
+      "value": "4fef2910-31ed-486c-9a83-bf175960e602"
+    },
+    {
+      "label": "Analytical Skill Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "3bfa035b-548d-4e1d-b4e1-6cc0bc0180d1"
+    },
+    {
+      "label": "Physical Skill Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "3844b6e6-ae3f-4b1a-87d9-8b957432ca74"
+    },
+    {
+      "label": "Customer-Facing Role Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "27afe472-b1d9-4285-93d0-d21ec8d50aa5"
+    },
+    {
+      "label": "Internal Collaboration Role Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "04f39dcf-0703-4953-a1cd-433ccbff786f"
+    },
+    {
+      "label": "Independent Role Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "e54d8e4e-9ef1-4620-bbf7-5751262155ce"
+    },
+    {
+      "label": "Direct Impact Role Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "6d9dafb7-5d3c-462a-a765-63bfd7619353"
+    },
+    {
+      "label": "Indirect Impact Role Virtues",
+      "collectionName": "QuestionnaireConfigOptions",
+      "value": "1a446db4-b82d-4536-8f0c-3c9f90d15b72"
+    },
+    {
+      "label": "Franchisee Mastery Profile",
+      "collectionName": "Compartments",
+      "value": "76bcceec-14ad-4faf-b3c9-749da61ba5b8"
+    },
+    {
+      "label": "Integrated Mindset Profiling",
+      "collectionName": "Compartments",
+      "value": "a96c31af-f893-4401-bed9-98c8d1cf585b"
+    },
+    {
+      "label": "Conclusions and Recommendations",
+      "value": "all-2"
+    }
+  ],
+  "date": "2025-06-30T08:57:23.029Z"
+}
