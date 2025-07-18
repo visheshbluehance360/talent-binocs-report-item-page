@@ -20,8 +20,6 @@
     document.querySelector("#wixMobileViewport")?.remove();
   </script>
 
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
-
   <style id="main">
     .displayNone {
       display: none !important;
@@ -1084,6 +1082,8 @@
 
             populateData();
 
+            console.log("loaded-data");
+
             root.classList.add("loaded-data");
 
             imagesLoading();
@@ -1101,7 +1101,9 @@
 
         const images = Array.from(root.querySelectorAll("img"));
 
-        await Promise.all(images.map(imageLoading));
+        await Promise.allSettled(images.map(imageLoading));
+
+        console.log("imagesLoaded");
 
         root.classList.add("imagesLoaded");
       } catch (error) {
