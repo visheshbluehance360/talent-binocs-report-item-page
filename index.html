@@ -392,7 +392,7 @@
       animation: 1s infinite alternate skeleton;
     }
 
-    .report-page-root button.print:not(.loaded-data .print) {
+    .report-page-root:not(.loaded-data.imagesLoaded) button.print {
       display: none;
     }
   </style>
@@ -608,6 +608,7 @@
       });
     }
   </script>
+
   <script id="classes">
     let data;
 
@@ -829,6 +830,7 @@
       }
     }
   </script>
+
   <script id="populateData">
     function populateData() {
       console.log(data);
@@ -1051,6 +1053,7 @@
       reportModulesContentCardBody.appendChild(reportModuleComponent.element);
     }
   </script>
+
   <script id="fetchData">
     function getPageData(populateData) {
       const siteMainUrl = "https://www.themindsetiq.com";
@@ -1082,6 +1085,8 @@
             populateData();
 
             root.classList.add("loaded-data");
+
+            imagesLoading();
           }
         })
         .catch((error) => {
@@ -1089,7 +1094,31 @@
           root.classList.add("report-not-found");
         });
     }
+
+    async function imagesLoading() {
+      try {
+        const root = document.querySelector(".report-page-root");
+
+        const images = Array.from(root.querySelectorAll("img"));
+
+        await Promise.all(images.map(imageLoading));
+
+        root.classList.add("imagesLoaded");
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    function imageLoading(image) {
+      if (image.complete) return Promise.resolve();
+
+      return new Promise((resolve) => {
+        image.addEventListener("load", resolve);
+        image.addEventListener("error", resolve);
+      });
+    }
   </script>
+
   <script id="handleURLChange">
     let lastUrl = location.href;
     const observer = new MutationObserver(() => {
@@ -1104,9 +1133,11 @@
 
     observer.observe(document, { subtree: true, childList: true });
   </script>
+
   <script id="init">
     addEventListener("load", () => {
       const printButton = document.querySelector("button.print");
+
       printButton.addEventListener("click", () => {
         window.print();
       });
