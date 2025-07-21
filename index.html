@@ -997,11 +997,24 @@
       }
     }
 
+    let prefixTitle;
+
     function populate_reportModuleContentListItem(reportModuleContentListItem) {
+      console.log('-----------------');
+
       try {
         reportModuleContentListItem?.howToContents?.forEach(populate_list_howToContent);
 
-        reportModuleContentListItem?.itemReportModules?.forEach(itemReportModule => populate_list_reportModule(itemReportModule));
+
+
+        if (reportModuleContentListItem?.type == "configItem" && data?.questionnaire?.type == "Culture Attribute Alignment") {
+          prefixTitle = reportModuleContentListItem.itemTitle;
+        }
+
+        reportModuleContentListItem?.itemReportModules
+          ?.forEach(itemReportModule =>
+            populate_list_reportModule(itemReportModule, prefixTitle)
+          );
 
         reportModuleContentListItem?.childrenReportModuleItems?.forEach(populate_reportModuleContentListItem);
       } catch (error) {
@@ -1013,6 +1026,7 @@
       if (listItemData.howToContents?.length) {
         listItemData.howToContents.forEach(populate_list_howToContent);
       }
+
       if (listItemData.reportModule) {
         populate_list_reportModule(listItemData.reportModule);
       }
@@ -1027,19 +1041,23 @@
       howToContentElement.appendChild(howToContentComponent.element);
     }
 
-    function populate_list_reportModule(reportModuleData) {
-      const reportModulesContentCardBody =
-        document.querySelector(".content-cards");
-      const title = reportModuleData[reportModuleData.assignedTo].title;
+    function populate_list_reportModule(reportModuleData, prefixTitle) {
+      const reportModulesContentCardBody = document.querySelector(".content-cards");
+      let title = reportModuleData[reportModuleData.assignedTo].title;
+
+      title = [prefixTitle, title].filter(Boolean).join(" - ");
+
       const scoreText = [
         reportModuleData.scoreMin,
         reportModuleData.scoreMax,
       ].join("-");
+
       const scoreGraphicItem = data.scoreGraphics.find(
         (scoreGraphic) =>
           scoreGraphic.score >= reportModuleData.scoreMin &&
           scoreGraphic.score <= reportModuleData.scoreMax
       );
+
       const scoreGraphicUrl = scoreGraphicItem?.image;
       const reportModuleComponent = new ReportModuleComponent(
         title,
