@@ -861,41 +861,37 @@
       recruiterEmailElement.textContent = candidateData.email;
     }
 
-    function populate_questionnaireData(questionnaireData) {
+    function populate_questionnaireData(questionnaireData = []) {
       const questionnaireDetailsBody = document.querySelector(
         ".questionnaire-details .content-card-body"
       );
-      const detailItem_questionnaireName = new DetailItemComponent(
-        "Name",
-        questionnaireData.name
-      );
 
-      questionnaireDetailsBody.appendChild(
-        detailItem_questionnaireName.element
-      );
+      const questionnaireDetailItems = questionnaireData.map(questionnaireDataItem => {
+        if (questionnaireDataItem.type == "date") {
+          return new DetailItemComponent(
+            questionnaireDataItem.label,
+            formatDate(questionnaireDataItem.value)
+          );
+        }
 
-      const detailItem_questionnaireType = new DetailItemComponent(
-        "Type of Report:",
-        questionnaireData.type
-      );
+        if (questionnaireDataItem.type == "time") {
+          return new DetailItemComponent(
+            questionnaireDataItem.label,
+            formatTime(questionnaireDataItem.value)
+          );
+        }
 
-      questionnaireDetailsBody.appendChild(
-        detailItem_questionnaireType.element
-      );
-      const detailItem_questionnaireDate = new DetailItemComponent(
-        "Date of Report:",
-        formatDate(questionnaireData.date)
-      );
-      questionnaireDetailsBody.appendChild(
-        detailItem_questionnaireDate.element
-      );
-      const detailItem_questionnaireTime = new DetailItemComponent(
-        "Time of Report:",
-        formatTime(questionnaireData.date)
-      );
-      questionnaireDetailsBody.appendChild(
-        detailItem_questionnaireTime.element
-      );
+        return new DetailItemComponent(
+          questionnaireDataItem.label,
+          questionnaireDataItem.value
+        );
+      });
+
+      questionnaireDetailItems.forEach(questionnaireDetailItem => {
+        questionnaireDetailsBody.appendChild(
+          questionnaireDetailItem.element
+        );
+      });
 
       if (typeof questionnaireData?.type == 'string') {
         const titleElement = document.querySelector('title');
@@ -1137,7 +1133,7 @@
     const observer = new MutationObserver(() => {
       if (location.href !== lastUrl) {
         lastUrl = location.href;
-        
+
         console.log("URL changed (mutation observer)");
 
         document.querySelector(".report-page-root").remove();
