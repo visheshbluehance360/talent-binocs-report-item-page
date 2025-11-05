@@ -241,6 +241,37 @@
       gap: 0.4em;
     }
 
+    .report-page-root .timeTakenValueItem {
+      display: inline-flex;
+      margin-right: 0.4em;
+      margin-bottom: 0.4em;
+      background: #f8fafc;
+      padding: 0.2em 0.6em;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .report-page-root .timeTakenValueItem .number {
+      font-weight: bold;
+      margin-right: 0.5em;
+    }
+
+    .report-page-root .timeTakenValueItem .secondsTaken {
+      padding: 2px 6px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    .report-page-root .timeTakenValueItem .secondsTaken.fast {
+      background: #ecfdf5;
+      color: #065f46;
+    }
+
+    .report-page-root .timeTakenValueItem .secondsTaken.slow {
+      background: #fff1f2;
+      color: #9f1239;
+    }
+
     .report-page-root .content-card-title {
       text-align: left;
       font-size: 1em;
@@ -612,10 +643,13 @@
 
     class DetailItemComponent {
       _title = "";
-      _body = "";
-      constructor(title = "", body = "") {
+      _value;
+      _type = "string";
+      constructor(title = "", value, type = "string") {
         this._title = title;
-        this._body = body;
+        this._value = value;
+        this._type = type;
+
         this.titleElement = this.createTitleElement();
         this.bodyElement = this.createBodyElement();
         this.element = this.createElement();
@@ -629,7 +663,19 @@
       createBodyElement() {
         const element = document.createElement("div");
         element.classList.add("body");
-        element.textContent = this._body;
+
+        if (this._type == "string") {
+          element.textContent = this._value;
+        } else if (this._type == "timeTaken") {
+          console.log("creating body value element for", this);
+
+          this._value.forEach(timeTaken => {
+            const timeTakenValueComponent = new TimeTakenValueComponent(timeTaken.number, timeTaken.secondsTaken);
+
+            element.appendChild(timeTakenValueComponent.element);
+          });
+        }
+
         return element;
       }
       createElement() {
@@ -652,6 +698,19 @@
       }
       get body() {
         return this._body;
+      }
+    }
+    class TimeTakenValueComponent {
+      constructor(number, secondsTaken) {
+        this.number = number;
+        this.secondsTaken = secondsTaken;
+      }
+
+      get element() {
+        const element = document.createElement("div");
+        element.classList.add("timeTakenValueItem")
+        element.innerHTML = `<span class="number">Q${this.number}</span> <span class="secondsTaken">${this.secondsTaken}</span>`;
+        return element;
       }
     }
     class ReportModuleComponent {
@@ -862,36 +921,7 @@
     }
 
     function populate_questionnaireData(questionnaireData = []) {
-      const questionnaireDetailsBody = document.querySelector(
-        ".questionnaire-details .content-card-body"
-      );
-
-      const questionnaireDetailItems = questionnaireData.map(questionnaireDataItem => {
-        if (questionnaireDataItem.type == "date") {
-          return new DetailItemComponent(
-            questionnaireDataItem.label,
-            formatDate(questionnaireDataItem.value)
-          );
-        }
-
-        if (questionnaireDataItem.type == "time") {
-          return new DetailItemComponent(
-            questionnaireDataItem.label,
-            formatTime(questionnaireDataItem.value)
-          );
-        }
-
-        return new DetailItemComponent(
-          questionnaireDataItem.label,
-          questionnaireDataItem.value
-        );
-      });
-
-      questionnaireDetailItems.forEach(questionnaireDetailItem => {
-        questionnaireDetailsBody.appendChild(
-          questionnaireDetailItem.element
-        );
-      });
+      const questionnaireDetailItems = questionnaireData.forEach(populate_QuestionnaireDataItem);
 
       if (typeof questionnaireData?.type == 'string') {
         const titleElement = document.querySelector('title');
@@ -900,6 +930,36 @@
           titleElement.innerHTML = `The Mindset IQ Report - ${questionnaireData.type}`;
         }
       }
+    }
+
+    function populate_QuestionnaireDataItem(questionnaireDataItem) {
+      const questionnaireDetailsBody = document.querySelector(
+        ".questionnaire-details .content-card-body"
+      );
+
+      let questionnaireDetailItem;
+
+      if (questionnaireDataItem.type == "date") {
+        questionnaireDetailItem = new DetailItemComponent(
+          questionnaireDataItem.label,
+          formatDate(questionnaireDataItem.value)
+        );
+      } else if (questionnaireDataItem.type == "time") {
+        questionnaireDetailItem = new DetailItemComponent(
+          questionnaireDataItem.label,
+          formatTime(questionnaireDataItem.value)
+        );
+      } else {
+        questionnaireDetailItem = new DetailItemComponent(
+          questionnaireDataItem.label,
+          questionnaireDataItem.value,
+          questionnaireDataItem.type
+        );
+      }
+
+      questionnaireDetailsBody.appendChild(
+        questionnaireDetailItem.element
+      );
     }
 
     function populate_index() {
