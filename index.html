@@ -709,7 +709,7 @@
       get element() {
         const element = document.createElement("div");
         element.classList.add("timeTakenValueItem")
-        element.innerHTML = `<span class="number">Q${this.number}</span> <span class="secondsTaken">${this.secondsTaken}</span>`;
+        element.innerHTML = `<span class="number">Q${this.number}</span> <span class="secondsTaken${data.preferredTimeInSeconds <= this.secondsTaken ? " slow" : " fast"}">${this.secondsTaken}</span>`;
         return element;
       }
     }
